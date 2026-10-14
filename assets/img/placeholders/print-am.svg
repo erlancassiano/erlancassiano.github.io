@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Placeholder: additive manufacturing">
+  <rect width="960" height="600" fill="#161b22"/>
+  <g fill="none" stroke="#7eb6e8" stroke-width="2">
+    <path d="M300 420 L480 180 L660 420 Z"/>
+    <path d="M340 420 L480 240 L620 420" opacity="0.6"/>
+    <path d="M380 420 L480 300 L580 420" opacity="0.35"/>
+  </g>
+  <rect x="280" y="420" width="400" height="18" fill="#3dbdb6" opacity="0.5"/>
+  <text x="48" y="56" fill="#9aa3b2" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · 3D PRINT / AM</text>
+  <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
+</svg>
