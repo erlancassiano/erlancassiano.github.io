@@ -618,6 +618,16 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--fg-muted);
+  display: grid;
+  gap: 0.35rem;
+}
+.case-figure .figure-cap { display: block; line-height: 1.45; }
+.case-figure .figure-credit {
+  display: block;
+  color: var(--fg);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
 }
 .katex-display { overflow-x: auto; overflow-y: hidden; }
 .math-block {
