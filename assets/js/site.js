@@ -10,7 +10,8 @@
     const sync = () => {
       const dark = root.getAttribute("data-theme") === "dark";
       themeBtn.setAttribute("aria-pressed", String(dark));
-      themeBtn.textContent = dark ? "LT" : "DK";
+      themeBtn.textContent = dark ? "☀" : "☾";
+      themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
       themeBtn.title = dark ? "Switch to light theme" : "Switch to dark theme";
     };
     sync();
