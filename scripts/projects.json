@@ -1,0 +1,89 @@
+[
+  {
+    "slug": "satvhr-stm",
+    "title": "SATVHR mechanical architecture & STM vibration qualification",
+    "meta": "Visiona \u00b7 LEO Earth observation \u00b7 Phase B/C \u00b7 2023\u0096present",
+    "tags": [
+      "CAD",
+      "FEA",
+      "Thermal",
+      "Test",
+      "Calculations"
+    ],
+    "image": "/assets/img/placeholders/fea-mode.svg",
+    "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026)."
+  },
+  {
+    "slug": "vcub1-assembly",
+    "title": "VCUB1 final flight assembly",
+    "meta": "Visiona \u00b7 12 kg CubeSat \u00b7 Falcon 9 Transporter-7 \u00b7 2023",
+    "tags": [
+      "CAD",
+      "Test",
+      "Additive Manufacturing"
+    ],
+    "image": "/assets/img/placeholders/test-ait.svg",
+    "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch."
+  },
+  {
+    "slug": "mgse-lifting",
+    "title": "Lifting & handling MGSE \u0097 concept",
+    "meta": "Visiona \u00b7 SATVHR STM AIT \u00b7 concept lead",
+    "tags": [
+      "CAD",
+      "Test",
+      "Calculations"
+    ],
+    "image": "/assets/img/placeholders/structure.svg",
+    "summary": "Led the concept for the lifting and handling MGSE; detailed design and build by a subcontracted supplier; tested during the STM AIT campaign."
+  },
+  {
+    "slug": "mhd-reaction-wheel",
+    "title": "MHD magnetic-fluid reaction wheel",
+    "meta": "ITA M.Sc. thesis \u00b7 in progress \u00b7 2025\u00962027",
+    "tags": [
+      "CAD",
+      "Calculations",
+      "Test",
+      "Additive Manufacturing"
+    ],
+    "image": "/assets/img/placeholders/cad-panel.svg",
+    "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control."
+  },
+  {
+    "slug": "additive-manufacturing",
+    "title": "3D printing projects",
+    "meta": "Personal / supporting hardware \u00b7 AM",
+    "tags": [
+      "Additive Manufacturing",
+      "CAD",
+      "Test"
+    ],
+    "image": "/assets/img/placeholders/print-am.svg",
+    "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples."
+  },
+  {
+    "slug": "fox17-chimneys",
+    "title": "Fox17 \u0097 80 t chimneys & flanges",
+    "meta": "Fox17 \u00b7 industrial structures \u00b7 export \u00b7 2015\u00962023",
+    "tags": [
+      "CAD",
+      "Calculations",
+      "FEA"
+    ],
+    "image": "/assets/img/placeholders/structure.svg",
+    "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators)."
+  },
+  {
+    "slug": "unb-hybrid-rocket",
+    "title": "UnB hybrid rocket static-fire test bench",
+    "meta": "Universidade de Bras\u00edlia \u00b7 research \u00b7 2012\u00962013",
+    "tags": [
+      "CAD",
+      "Test",
+      "Calculations"
+    ],
+    "image": "/assets/img/placeholders/test-ait.svg",
+    "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013)."
+  }
+]

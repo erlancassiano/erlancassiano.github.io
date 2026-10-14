@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Placeholder: AIT / test">
+  <rect width="960" height="600" fill="#ebe7df"/>
+  <rect x="200" y="150" width="560" height="280" fill="#ffffff" stroke="#1a3a5c" stroke-width="2"/>
+  <rect x="260" y="210" width="180" height="160" fill="#0b6e6a" opacity="0.2" stroke="#0b6e6a"/>
+  <rect x="500" y="230" width="200" height="120" fill="#1a3a5c" opacity="0.15" stroke="#1a3a5c"/>
+  <circle cx="350" cy="290" r="28" fill="none" stroke="#0b6e6a" stroke-width="3"/>
+  <path d="M220 470 H740" stroke="#5c6370" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="48" y="56" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · AIT / TEST SETUP</text>
+  <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
+</svg>

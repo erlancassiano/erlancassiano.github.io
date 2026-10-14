@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Placeholder: structure">
+  <rect width="960" height="600" fill="#f6f4ef"/>
+  <g stroke="#1a3a5c" stroke-width="2" fill="none">
+    <path d="M220 480 V140 H740 V480"/>
+    <path d="M220 140 L480 60 L740 140"/>
+    <path d="M320 480 V220 H640 V480"/>
+    <path d="M320 220 L480 160 L640 220"/>
+    <circle cx="480" cy="300" r="36"/>
+  </g>
+  <text x="48" y="56" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · STRUCTURE / HARDWARE</text>
+  <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
+</svg>
