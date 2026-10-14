@@ -71,7 +71,7 @@ PROJECTS = [
         "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).",
         "context": """
 <p>SATVHR is a below-300 kg, 5-year-life LEO Earth-observation satellite in phase B/C. As Mechanical Architect, I own the mechanical and thermal architecture: Creo layouts, payload accommodation, sandwich-panel structure, mass budget, and interface control documents (ICDs).</p>
-<p class="todo"><strong>TODO</strong> — Erlan: add mission context photo / public artwork only (no confidential Visiona data).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: add mission context photo / public artwork only (no confidential Visiona data).</p>
 """,
         "requirements": """
 <ul>
@@ -80,7 +80,7 @@ PROJECTS = [
   <li>GD&amp;T and tolerance stack-up per ISO GPS on mechanical drawings.</li>
   <li>Structuralthermal model (STM) vibration qualification correlated with the FEM.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> — Erlan: paste quantified requirements that are cleared for public release (loads, margins policy, etc.).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: paste quantified requirements that are cleared for public release (loads, margins policy, etc.).</p>
 """,
         "approach": """
 <p>Layouts and accommodation were driven in Creo. Structural work used Femap/Nastran models for design reviews and troubleshooting; thermal architecture used Thermal Desktop/SINDA. Margin reports documented the structural and thermal posture ahead of system reviews (PRR, PDR), with system / structure / thermal CDRs targeted for end of 2026.</p>
@@ -101,7 +101,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <div><strong>&lt; 0.1 µm</strong><span>Jitter measurement precision</span></div>
 </div>
 <p>STM vibration qualification (sine, random, and sine burst) passed at INPE/LIT in May 2026 and was correlated with the FEM. Jitter on the STM (main telescope mirror displacement under reaction-wheel imbalance) was measured with precision better than 0.1 µm.</p>
-<p class="todo"><strong>TODO</strong> — Erlan: add cleared FRF / mode-shape plots and any public numeric margins.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: add cleared FRF / mode-shape plots and any public numeric margins.</p>
 """,
         "mfg_test": """
 <p>STM AIT and vibration campaign at INPE/LIT. Thermal-vacuum (TVAC) campaign for SATVHR: <strong>not yet done</strong>.</p>
@@ -111,7 +111,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 </figure>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: 24 lessons learned cleared for publication (configuration trades, correlation practices, MGSE interfaces, etc.).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: 24 lessons learned cleared for publication (configuration trades, correlation practices, MGSE interfaces, etc.).</p>
 """,
         "tools": ["Creo Parametric", "Femap/Nastran", "Thermal Desktop/SINDA", "GD&T / ISO GPS", "MATLAB", "Python"],
     },
@@ -131,7 +131,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <li>Delta vibration and solar-panel deployment verification before launch.</li>
   <li>6U deployer-rail fit-check and integration tooling readiness for Falcon 9.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> — Erlan: add any public mass / volume / interface numbers cleared for this page.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: add any public mass / volume / interface numbers cleared for this page.</p>
 """,
         "approach": """
 <p>Revised the solar-panel assembly procedure, ran delta vibration and deployment tests, executed the 6U deployer-rail fit-check, reviewed qualification test data, and prepared integration tooling for launch.</p>
@@ -150,10 +150,10 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 """,
         "mfg_test": """
 <p>Delta vibration, solar-panel deployment, deployer fit-check, and the TVAC campaign documented in the IAC 2024 paper. No confidential Visiona/Thales datasets are shown here.</p>
-<p class="todo"><strong>TODO</strong> — Erlan: attach public photos from AIT (if cleared).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: attach public photos from AIT (if cleared).</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: procedure and fit-check lessons suitable for a public case study.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: procedure and fit-check lessons suitable for a public case study.</p>
 """,
         "tools": ["SolidWorks / Onshape", "Assembly procedures", "AIT tooling"],
     },
@@ -173,7 +173,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <li>Supplier-deliverable detailed design and manufacture from a clear concept package.</li>
   <li>Verification during the STM AIT campaign.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> — Erlan: public load / factor-of-safety requirements if cleared.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: public load / factor-of-safety requirements if cleared.</p>
 """,
         "approach": """
 <p>I <strong>led the concept</strong>; detailed design and manufacturing were executed by a subcontracted supplier. Concept work covered lift points, handling envelopes, and interface definition against the STM configuration.</p>
@@ -189,13 +189,13 @@ $$F = n \\, mg$$
 """,
         "results": """
 <p>MGSE was manufactured by the supplier and tested during the STM AIT campaign.</p>
-<p class="todo"><strong>TODO</strong> — Erlan: add cleared photos of the as-built MGSE in use (no confidential markings).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: add cleared photos of the as-built MGSE in use (no confidential markings).</p>
 """,
         "mfg_test": """
 <p>Detailed and built by a subcontractor; functional/handling checks during STM AIT. TVAC for the satellite: not yet done (separate from MGSE).</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: supplier-follow-up and concept-to-build interface lessons.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: supplier-follow-up and concept-to-build interface lessons.</p>
 """,
         "tools": ["Creo Parametric", "ICD definition", "Supplier follow-up"],
     },
@@ -212,11 +212,11 @@ $$F = n \\, mg$$
         "requirements": """
 <ul>
   <li>Reaction-wheel function using a magnetic fluid under MHD actuation, sized for CubeSat attitude control.</li>
-  <li class="todo"><strong>TODO</strong> — Erlan: torque, momentum, mass, and power targets once frozen for public release.</li>
+  <li class="todo"><strong>TODO</strong> - Erlan: torque, momentum, mass, and power targets once frozen for public release.</li>
 </ul>
 """,
         "approach": """
-<p class="todo"><strong>TODO</strong> — Erlan: describe modelling approach (MHD equations, FEM/CFD, prototypes) with only cleared content.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: describe modelling approach (MHD equations, FEM/CFD, prototypes) with only cleared content.</p>
 <div class="math-block">
 <p>Representative MHD body force (placeholder form):</p>
 $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
@@ -224,13 +224,13 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
 </div>
 """,
         "results": """
-<p class="todo"><strong>TODO</strong> — Erlan: status, prototypes, and any measured numbers cleared for the site. Do not invent performance figures.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: status, prototypes, and any measured numbers cleared for the site. Do not invent performance figures.</p>
 """,
         "mfg_test": """
-<p class="todo"><strong>TODO</strong> — Erlan: prototype manufacturing (incl. AM if used) and lab test plan/status.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: prototype manufacturing (incl. AM if used) and lab test plan/status.</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: research lessons so far.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: research lessons so far.</p>
 """,
         "tools": ["Creo / CAD", "MATLAB", "Python", "Lab instrumentation"],
     },
@@ -242,10 +242,10 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "image": "/assets/img/placeholders/print-am.png",
         "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples.",
         "context": """
-<p class="todo"><strong>TODO</strong> — Erlan: introduce which print projects are public (fixtures, education, personal prototypes). No confidential flight hardware data.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: introduce which print projects are public (fixtures, education, personal prototypes). No confidential flight hardware data.</p>
 """,
         "requirements": """
-<p class="todo"><strong>TODO</strong> — Erlan: requirements per selected print (tolerance, material, load).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: requirements per selected print (tolerance, material, load).</p>
 """,
         "approach": """
 <p>Practical CNC / CAM background (SENAI aerospace machining course, 120 h) complements FDM/AM prototyping for ground support and concept hardware.</p>
@@ -255,13 +255,13 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
 </figure>
 """,
         "results": """
-<p class="todo"><strong>TODO</strong> — Erlan: outcomes with real numbers only (print time, mass, measured fit).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: outcomes with real numbers only (print time, mass, measured fit).</p>
 """,
         "mfg_test": """
-<p class="todo"><strong>TODO</strong> — Erlan: process (FDM/SLA/etc.), post-processing, and fit checks.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: process (FDM/SLA/etc.), post-processing, and fit checks.</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: design-for-AM lessons.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: design-for-AM lessons.</p>
 """,
         "tools": ["Onshape / SolidWorks / Creo", "FDM (TBD)", "CAM / CNC"],
     },
@@ -278,7 +278,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "requirements": """
 <ul>
   <li>Steel chimneys on the order of 80 t and 100 m+ height, with exportable flange detailing.</li>
-  <li class="todo"><strong>TODO</strong> — Erlan: codes/standards and wind/seismic load basis if publishable.</li>
+  <li class="todo"><strong>TODO</strong> - Erlan: codes/standards and wind/seismic load basis if publishable.</li>
 </ul>
 """,
         "approach": """
@@ -293,13 +293,13 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
   <div><strong>80 t</strong><span>Chimney class</span></div>
   <div><strong>100 m+</strong><span>Height class</span></div>
 </div>
-<p class="todo"><strong>TODO</strong> — Erlan: export destinations / project names only if cleared; no invented performance claims.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: export destinations / project names only if cleared; no invented performance claims.</p>
 """,
         "mfg_test": """
-<p class="todo"><strong>TODO</strong> — Erlan: fabrication partners and inspection approach (public).</p>
+<p class="todo"><strong>TODO</strong> - Erlan: fabrication partners and inspection approach (public).</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: large-structure detailing lessons transferable to space MGSE / ground equipment.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: large-structure detailing lessons transferable to space MGSE / ground equipment.</p>
 """,
         "tools": ["SolidWorks", "Structural calculations", "Fabrication drawings"],
     },
@@ -316,7 +316,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "requirements": """
 <ul>
   <li>Experimental bench enabling static-fire testing of hybrid rocket motors.</li>
-  <li class="todo"><strong>TODO</strong> — Erlan: thrust / instrumentation requirements from the 2013 project if still accurate.</li>
+  <li class="todo"><strong>TODO</strong> - Erlan: thrust / instrumentation requirements from the 2013 project if still accurate.</li>
 </ul>
 """,
         "approach": """
@@ -329,13 +329,13 @@ $$T = F_{\\mathrm{load\\,cell}}$$
 """,
         "results": """
 <p>Published: Cassiano, E. (2013). <em>Projeto de uma Bancada Experimental para o Teste de Motores Foguetes com Propulsão Híbrida</em>. 19th UnB Scientific Initiation Congress.</p>
-<p class="todo"><strong>TODO</strong> — Erlan: photos of the bench and any cleared measured curves.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: photos of the bench and any cleared measured curves.</p>
 """,
         "mfg_test": """
-<p class="todo"><strong>TODO</strong> — Erlan: fabrication of the bench and static-fire safety procedure summary.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: fabrication of the bench and static-fire safety procedure summary.</p>
 """,
         "lessons": """
-<p class="todo"><strong>TODO</strong> — Erlan: instrumentation and safety lessons still relevant to spacecraft test setups.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: instrumentation and safety lessons still relevant to spacecraft test setups.</p>
 """,
         "tools": ["SolidWorks", "Test instrumentation", "ANSYS CFX (related CFD)"],
     },
