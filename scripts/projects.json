@@ -14,6 +14,18 @@
     "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026)."
   },
   {
+    "slug": "sgdc-propulsion",
+    "title": "SGDC propulsion technology transfer",
+    "meta": "Thales Alenia Space \u00b7 Cannes \u00b7 AEB programme \u00b7 2014\u20132016",
+    "tags": [
+      "Calculations",
+      "Test",
+      "CAD"
+    ],
+    "image": "/assets/img/sgdc/sgdc-card.jpg",
+    "summary": "On-the-job training on Brazil\u2019s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M."
+  },
+  {
     "slug": "vcub1-assembly",
     "title": "VCUB1 final flight assembly",
     "meta": "Visiona \u00b7 12 kg CubeSat \u00b7 Falcon 9 Transporter-7 \u00b7 2023",

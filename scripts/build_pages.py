@@ -135,6 +135,71 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "tools": ["Creo Parametric", "Femap/Nastran", "Thermal Desktop/SINDA", "GD&T / ISO GPS", "MATLAB", "Python"],
     },
     {
+        "slug": 'sgdc-propulsion',
+        "title": 'SGDC propulsion technology transfer',
+        "meta": 'Thales Alenia Space · Cannes · AEB programme · 2014–2016',
+        "tags": ['Calculations', 'Test', 'CAD'],
+        "image": '/assets/img/sgdc/sgdc-card.jpg',
+        "summary": 'On-the-job training on Brazil’s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M.',
+        "context": """
+<p>Selected by the Brazilian Space Agency (AEB) for the SGDC Technology Absorption Programme at Thales Alenia Space in Cannes: about 5,500 h of full-time on-the-job training on the SGDC bipropellant propulsion subsystem (tanks, valves, lines, interfaces), from requirements and design through production, procedures, testing and operation.</p>
+<figure class="case-figure">
+  <img src="/assets/img/sgdc/sgdc-satellite-completed.jpg" alt="Fully assembled SGDC satellite in a cleanroom, with a large circular antenna, stowed solar arrays, and gold and black thermal blankets; Thales Alenia Space balloons in the background" width="1169" height="780" loading="lazy">
+  <figcaption>
+    <span class="figure-cap">SGDC (SGDC-1) fully assembled in the cleanroom — circular antenna, stowed solar arrays, and MLI blankets visible.</span>
+    <span class="figure-credit"><a href="https://visionaespacial.com/imprensa/" rel="noopener noreferrer">© Visiona Tecnologia Espacial</a></span>
+  </figcaption>
+</figure>
+""",
+        "requirements": """
+<ul>
+  <li>Understand and follow the bipropellant propulsion lifecycle under ECSS-driven V&amp;V as a trainee on SGDC.</li>
+  <li>Assess propulsion performance over life (pressure, thrusters, temperature, propellant gauging), including tank deformation under pressurisation where relevant to loading.</li>
+</ul>
+<p class="todo"><strong>TODO</strong> - Erlan: any additional public requirements or scope notes cleared for this case study.</p>
+""",
+        "approach": """
+<p>Worked across the bipropellant propulsion lifecycle with Thales engineers. Showed that more than 16 kg of additional propellant could be loaded on SGDC when accounting for tank deformation under pressurisation.</p>
+<figure class="case-figure">
+  <img src="/assets/img/sgdc/sgdc-service-module.jpg" alt="Dark cylindrical SGDC service-module primary structure on a white assembly stand, inspected by two technicians in Thales Alenia Space cleanroom coats" width="1170" height="780" loading="lazy">
+  <figcaption>
+    <span class="figure-cap">SGDC service-module central structure on the assembly stand during integration at Thales Alenia Space.</span>
+    <span class="figure-credit"><a href="https://visionaespacial.com/imprensa/" rel="noopener noreferrer">© Visiona Tecnologia Espacial</a></span>
+  </figcaption>
+</figure>
+<figure class="case-figure">
+  <img src="/assets/img/sgdc/sgdc-payload-module.jpg" alt="SGDC payload module open in a silver integration frame, showing dense wiring harnesses and electronics panels before closure" width="1170" height="780" loading="lazy">
+  <figcaption>
+    <span class="figure-cap">SGDC payload module in its integration frame — internal electronics and harnesses before panel closure.</span>
+    <span class="figure-credit"><a href="https://visionaespacial.com/imprensa/" rel="noopener noreferrer">© Visiona Tecnologia Espacial</a></span>
+  </figcaption>
+</figure>
+""",
+        "results": """
+<div class="results-grid">
+  <div><strong>&gt; 16 kg</strong><span>Additional propellant</span></div>
+  <div><strong>~2.5 months</strong><span>Extra service life</span></div>
+  <div><strong>~R$ 36M</strong><span>Life-extension value shown</span></div>
+</div>
+<p>AEB later recognised the propellant-loading method that extends SGDC lifetime (Mar 2017). Witnessed SGDC propulsion-related tests in Cannes as a trainee.</p>
+<figure class="case-figure">
+  <img src="/assets/img/sgdc/sgdc-solar-panel-deployment.jpg" alt="SGDC solar-array wing fully extended across a white cleanroom, attached to the satellite body covered in silver and gold MLI" width="1169" height="780" loading="lazy">
+  <figcaption>
+    <span class="figure-cap">SGDC solar-array wing fully deployed during ground testing in the cleanroom.</span>
+    <span class="figure-credit"><a href="https://visionaespacial.com/imprensa/" rel="noopener noreferrer">© Visiona Tecnologia Espacial</a></span>
+  </figcaption>
+</figure>
+""",
+        "mfg_test": """
+<p>Press photographs below are from Visiona’s public SGDC assembly, integration and test gallery (Thales Alenia Space facilities). Propulsion tests were witnessed in Cannes during the technology-transfer programme.</p>
+<p class="todo"><strong>TODO</strong> - Erlan: optional cleared notes on which propulsion tests were witnessed (no confidential data).</p>
+""",
+        "lessons": """
+<p class="todo"><strong>TODO</strong> - Erlan: 2–3 public lessons from the SGDC propulsion transfer (gauging, tank deformation, V&amp;V practices).</p>
+""",
+        "tools": ['Propulsion subsystem V&amp;V', 'ECSS (tailored)', 'Propellant gauging / loading analysis'],
+    },
+    {
         "slug": "vcub1-assembly",
         "title": "VCUB1 final flight assembly",
         "meta": "Visiona · 12 kg CubeSat · Falcon 9 Transporter-7 · 2023",
