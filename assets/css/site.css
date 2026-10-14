@@ -462,16 +462,17 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   .timeline::before { left: 0.55rem; }
 }
 
-.timeline li {
+/* Direct children only — nested bullet <li> must not inherit the 3-col grid */
+.timeline > li {
   display: grid;
-  grid-template-columns: 7rem 2rem 1fr;
+  grid-template-columns: 7rem 2rem minmax(0, 1fr);
   gap: 0.75rem 0.5rem;
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--line);
 }
 @media (max-width: 700px) {
-  .timeline li { grid-template-columns: 1.5rem 1fr; }
-  .timeline .when {
+  .timeline > li { grid-template-columns: 1.5rem minmax(0, 1fr); }
+  .timeline > li .when {
     grid-column: 2;
     margin-bottom: -0.35rem;
   }
@@ -507,8 +508,16 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   color: var(--fg-muted);
   font-size: 0.95rem;
 }
-.timeline .content ul { padding-left: 1.1rem; }
-.timeline .content li { margin: 0.25rem 0; }
+.timeline .content ul {
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+.timeline .content li {
+  display: list-item;
+  margin: 0.25rem 0;
+  padding: 0;
+  border: 0;
+}
 
 /* —— Gallery —— */
 .gallery-grid {
