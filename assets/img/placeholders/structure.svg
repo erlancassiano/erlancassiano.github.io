@@ -7,6 +7,6 @@
     <path d="M320 220 L480 160 L640 220"/>
     <circle cx="480" cy="300" r="36"/>
   </g>
-  <text x="48" y="56" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · STRUCTURE / HARDWARE</text>
+  <text x="48" y="56" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER Â· STRUCTURE / HARDWARE</text>
   <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
 </svg>

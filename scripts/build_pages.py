@@ -14,7 +14,7 @@ NAV = """<!doctype html>
 <title>{title} · Erlan Cassiano</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="https://erlancassiano.github.io/projects/{slug}/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@ PROJECTS = [
         "title": "SATVHR mechanical architecture & STM vibration qualification",
         "meta": "Visiona · LEO Earth observation · Phase B/C · 2023present",
         "tags": ["CAD", "FEA", "Thermal", "Test", "Calculations"],
-        "image": "/assets/img/placeholders/fea-mode.svg",
+        "image": "/assets/img/placeholders/fea-mode.png",
         "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).",
         "context": """
 <p>SATVHR is a below-300 kg, 5-year-life LEO Earth-observation satellite in phase B/C. As Mechanical Architect, I own the mechanical and thermal architecture: Creo layouts, payload accommodation, sandwich-panel structure, mass budget, and interface control documents (ICDs).</p>
@@ -90,7 +90,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 <p>where $k$ is an effective stiffness and $m$ a modal mass. <span class="todo" style="display:inline;border:none;padding:0;background:none"><strong>TODO</strong>: Erlan to supply the actual relation used in the public write-up.</span></p>
 </div>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/cad-panel.svg" alt="Placeholder CAD layout of SATVHR structure" width="960" height="600">
+  <img src="/assets/img/placeholders/cad-panel.png" alt="Placeholder CAD layout of SATVHR structure" width="960" height="600">
   <figcaption>PLACEHOLDER  CAD layout / accommodation view</figcaption>
 </figure>
 """,
@@ -106,7 +106,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "mfg_test": """
 <p>STM AIT and vibration campaign at INPE/LIT. Thermal-vacuum (TVAC) campaign for SATVHR: <strong>not yet done</strong>.</p>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/test-ait.svg" alt="Placeholder STM vibration test setup" width="960" height="600">
+  <img src="/assets/img/placeholders/test-ait.png" alt="Placeholder STM vibration test setup" width="960" height="600">
   <figcaption>PLACEHOLDER  STM vibration / AIT photo</figcaption>
 </figure>
 """,
@@ -120,7 +120,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "title": "VCUB1 final flight assembly",
         "meta": "Visiona · 12 kg CubeSat · Falcon 9 Transporter-7 · 2023",
         "tags": ["CAD", "Test", "Additive Manufacturing"],
-        "image": "/assets/img/placeholders/test-ait.svg",
+        "image": "/assets/img/placeholders/test-ait.png",
         "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch.",
         "context": """
 <p>VCUB1 is a 12 kg CubeSat that was launched on Falcon 9 (SpaceX Transporter-7, April 2023) and operated in orbit. In early 2023 I supported final integration and performed the final flight assembly.</p>
@@ -136,7 +136,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "approach": """
 <p>Revised the solar-panel assembly procedure, ran delta vibration and deployment tests, executed the 6U deployer-rail fit-check, reviewed qualification test data, and prepared integration tooling for launch.</p>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/structure.svg" alt="Placeholder VCUB1 assembly" width="960" height="600">
+  <img src="/assets/img/placeholders/structure.png" alt="Placeholder VCUB1 assembly" width="960" height="600">
   <figcaption>PLACEHOLDER  VCUB1 flight hardware / assembly</figcaption>
 </figure>
 """,
@@ -162,7 +162,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "title": "Lifting & handling MGSE  concept",
         "meta": "Visiona · SATVHR STM AIT · concept lead",
         "tags": ["CAD", "Test", "Calculations"],
-        "image": "/assets/img/placeholders/structure.svg",
+        "image": "/assets/img/placeholders/structure.png",
         "summary": "Led the concept for the lifting and handling MGSE; detailed design and build by a subcontracted supplier; tested during the STM AIT campaign.",
         "context": """
 <p>Ground support equipment was required to lift and handle the SATVHR STM safely during AIT and vibration preparation at INPE/LIT.</p>
@@ -183,7 +183,7 @@ $$F = n \\, mg$$
 <p>with proof factor $n$ per the applicable MGSE standard. <strong>TODO</strong>: Erlan to replace with the cleared sizing relation.</p>
 </div>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/cad-panel.svg" alt="Placeholder MGSE concept CAD" width="960" height="600">
+  <img src="/assets/img/placeholders/cad-panel.png" alt="Placeholder MGSE concept CAD" width="960" height="600">
   <figcaption>PLACEHOLDER  MGSE concept CAD</figcaption>
 </figure>
 """,
@@ -204,7 +204,7 @@ $$F = n \\, mg$$
         "title": "MHD magnetic-fluid reaction wheel",
         "meta": "ITA M.Sc. thesis · in progress · 20252027",
         "tags": ["CAD", "Calculations", "Test", "Additive Manufacturing"],
-        "image": "/assets/img/placeholders/cad-panel.svg",
+        "image": "/assets/img/placeholders/cad-panel.png",
         "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control.",
         "context": """
 <p>Masters research at Instituto Tecnológico de Aeronáutica (ITA), programme EAM-1  Aeronautical Design, Structures, and Aerospace Systems. Advisor: Prof. Tiago de Paula. Expected completion July 2027.</p>
@@ -239,7 +239,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "title": "3D printing projects",
         "meta": "Personal / supporting hardware · AM",
         "tags": ["Additive Manufacturing", "CAD", "Test"],
-        "image": "/assets/img/placeholders/print-am.svg",
+        "image": "/assets/img/placeholders/print-am.png",
         "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples.",
         "context": """
 <p class="todo"><strong>TODO</strong>  Erlan: introduce which print projects are public (fixtures, education, personal prototypes). No confidential flight hardware data.</p>
@@ -250,7 +250,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "approach": """
 <p>Practical CNC / CAM background (SENAI aerospace machining course, 120 h) complements FDM/AM prototyping for ground support and concept hardware.</p>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/print-am.svg" alt="Placeholder 3D printed part" width="960" height="600">
+  <img src="/assets/img/placeholders/print-am.png" alt="Placeholder 3D printed part" width="960" height="600">
   <figcaption>PLACEHOLDER  printed part gallery item</figcaption>
 </figure>
 """,
@@ -270,7 +270,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "title": "Fox17  80 t chimneys & flanges",
         "meta": "Fox17 · industrial structures · export · 20152023",
         "tags": ["CAD", "Calculations", "FEA"],
-        "image": "/assets/img/placeholders/structure.svg",
+        "image": "/assets/img/placeholders/structure.png",
         "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
         "context": """
 <p>Fox17 designed filters and separators for cement plants. Structural design responsibility included large steel chimneys and flange interfaces for export projects.</p>
@@ -284,7 +284,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "approach": """
 <p>Mechanical design and detailing of chimney shells and flanges for fabrication and export. Supporting analyses as required by the project.</p>
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/structure.svg" alt="Placeholder chimney structure" width="960" height="600">
+  <img src="/assets/img/placeholders/structure.png" alt="Placeholder chimney structure" width="960" height="600">
   <figcaption>PLACEHOLDER  chimney / flange drawing or photo</figcaption>
 </figure>
 """,
@@ -308,7 +308,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "title": "UnB hybrid rocket static-fire test bench",
         "meta": "Universidade de Brasília · research · 20122013",
         "tags": ["CAD", "Test", "Calculations"],
-        "image": "/assets/img/placeholders/test-ait.svg",
+        "image": "/assets/img/placeholders/test-ait.png",
         "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013).",
         "context": """
 <p>During the Mechanical Engineering bachelors at Universidade de Brasília, I worked as a volunteer researcher on hybrid rocket static-fire test benches (Mar 2012  Jun 2013). Related extracurriculars: Apuama Racing (Formula SAE) and N-Prize.</p>
@@ -358,7 +358,7 @@ HEAD = """<!doctype html>
 <title>{title} · Erlan Cassiano</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="https://erlancassiano.github.io/projects/{slug}/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">

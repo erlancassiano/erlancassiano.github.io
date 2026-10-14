@@ -6,6 +6,6 @@
     <path d="M380 420 L480 300 L580 420" opacity="0.35"/>
   </g>
   <rect x="280" y="420" width="400" height="18" fill="#3dbdb6" opacity="0.5"/>
-  <text x="48" y="56" fill="#9aa3b2" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · 3D PRINT / AM</text>
+  <text x="48" y="56" fill="#9aa3b2" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER Â· 3D PRINT / AM</text>
   <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
 </svg>

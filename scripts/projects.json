@@ -10,7 +10,7 @@
       "Test",
       "Calculations"
     ],
-    "image": "/assets/img/placeholders/fea-mode.svg",
+    "image": "/assets/img/placeholders/fea-mode.png",
     "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026)."
   },
   {
@@ -22,7 +22,7 @@
       "Test",
       "Additive Manufacturing"
     ],
-    "image": "/assets/img/placeholders/test-ait.svg",
+    "image": "/assets/img/placeholders/test-ait.png",
     "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch."
   },
   {
@@ -34,7 +34,7 @@
       "Test",
       "Calculations"
     ],
-    "image": "/assets/img/placeholders/structure.svg",
+    "image": "/assets/img/placeholders/structure.png",
     "summary": "Led the concept for the lifting and handling MGSE; detailed design and build by a subcontracted supplier; tested during the STM AIT campaign."
   },
   {
@@ -47,7 +47,7 @@
       "Test",
       "Additive Manufacturing"
     ],
-    "image": "/assets/img/placeholders/cad-panel.svg",
+    "image": "/assets/img/placeholders/cad-panel.png",
     "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control."
   },
   {
@@ -59,7 +59,7 @@
       "CAD",
       "Test"
     ],
-    "image": "/assets/img/placeholders/print-am.svg",
+    "image": "/assets/img/placeholders/print-am.png",
     "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples."
   },
   {
@@ -71,7 +71,7 @@
       "Calculations",
       "FEA"
     ],
-    "image": "/assets/img/placeholders/structure.svg",
+    "image": "/assets/img/placeholders/structure.png",
     "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators)."
   },
   {
@@ -83,7 +83,7 @@
       "Test",
       "Calculations"
     ],
-    "image": "/assets/img/placeholders/test-ait.svg",
+    "image": "/assets/img/placeholders/test-ait.png",
     "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013)."
   }
 ]

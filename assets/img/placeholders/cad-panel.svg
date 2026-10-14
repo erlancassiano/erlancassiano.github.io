@@ -6,6 +6,6 @@
     <circle cx="480" cy="300" r="70"/>
     <path d="M410 300 H550 M480 230 V370"/>
   </g>
-  <text x="48" y="56" fill="#9aa3b2" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER · CAD RENDER</text>
+  <text x="48" y="56" fill="#9aa3b2" font-family="IBM Plex Mono, monospace" font-size="18">PLACEHOLDER Â· CAD RENDER</text>
   <text x="48" y="560" fill="#5c6370" font-family="IBM Plex Mono, monospace" font-size="14">TODO: replace with Erlans image</text>
 </svg>
