@@ -139,7 +139,7 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "title": "VCUB1 final flight assembly",
         "meta": "Visiona · 12 kg CubeSat · Falcon 9 Transporter-7 · 2023",
         "tags": ["CAD", "Test", "Additive Manufacturing"],
-        "image": "/assets/img/placeholders/test-ait.png",
+        "image": "/assets/img/vcub1/vcub1-card.jpg",
         "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch.",
         "context": """
 <p>VCUB1 is a 12 kg CubeSat that was launched on Falcon 9 (SpaceX Transporter-7, April 2023) and operated in orbit. In early 2023 I supported final integration and performed the final flight assembly.</p>
@@ -154,9 +154,13 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 """,
         "approach": """
 <p>Revised the solar-panel assembly procedure, ran delta vibration and deployment tests, executed the 6U deployer-rail fit-check, reviewed qualification test data, and prepared integration tooling for launch.</p>
+
 <figure class="case-figure">
-  <img src="/assets/img/placeholders/structure.png" alt="Placeholder VCUB1 assembly" width="960" height="600">
-  <figcaption>PLACEHOLDER  VCUB1 flight hardware / assembly</figcaption>
+  <img src="/assets/img/vcub1/vcub1-nanosats.jpg" alt="VCUB1 CubeSat with two solar-panel wings fully deployed, resting on a white stand in a laboratory" width="1200" height="800" loading="lazy">
+  <figcaption>
+    <span class="figure-cap">VCUB1 with solar panels deployed on a laboratory stand — central bus with a circular antenna/sensor aperture and body-mounted cells between the wings.</span>
+    <span class="figure-credit"><a href="https://www.nanosats.eu/sat/vcub1" rel="noopener noreferrer">Image: nanosats.eu</a></span>
+  </figcaption>
 </figure>
 """,
         "results": """
@@ -169,7 +173,6 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 """,
         "mfg_test": """
 <p>Delta vibration, solar-panel deployment, deployer fit-check, and the TVAC campaign documented in the IAC 2024 paper. No confidential Visiona/Thales datasets are shown here.</p>
-<p class="todo"><strong>TODO</strong> - Erlan: attach public photos from AIT (if cleared).</p>
 """,
         "lessons": """
 <p class="todo"><strong>TODO</strong> - Erlan: procedure and fit-check lessons suitable for a public case study.</p>
