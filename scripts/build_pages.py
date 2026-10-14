@@ -36,6 +36,7 @@ NAV = """<!doctype html>
       <li><a href="/#calculations">Calculations</a></li>
       <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
+      <li><a href="/media/">In the Media</a></li>
       <li><a href="/resume.html" aria-current="false">Resume</a></li>
       <li><a href="/#contact">Contact</a></li>
     </ul>
@@ -467,6 +468,7 @@ HEAD = """<!doctype html>
       <li><a href="/#calculations">Calculations</a></li>
       <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
+      <li><a href="/media/">In the Media</a></li>
       <li><a href="/resume.html">Resume</a></li>
       <li><a href="/#contact">Contact</a></li>
     </ul>
@@ -477,6 +479,47 @@ HEAD = """<!doctype html>
 </header>
 """
 
+
+
+MEDIA_SECTIONS = {
+    "sgdc-propulsion": """
+      <section id="in-the-media">
+        <h2>In the media</h2>
+        <div class="project-media">
+          <ul>
+            <li><a href="https://www.gov.br/aeb/pt-br/assuntos/noticias/engenheiro-da-aeb-desenvolve-metodo-que-aumenta-tempo-de-vida-do-sgdc" target="_blank" rel="noopener noreferrer">AEB (2017-03-23)</a> - tank-loading method that extends SGDC life. <span class="media-badge">Mentions Erlan</span></li>
+            <li><a href="https://www.defesanet.com.br/defesa/sgdc-chega-a-posicao-definitiva-ate-sabado/" target="_blank" rel="noopener noreferrer">DefesaNet (2017-05-05)</a> - AEB engineers' contributions, including life extension. <span class="media-badge">Mentions Erlan</span></li>
+          </ul>
+          <a class="media-more" href="/media/#sgdc">All SGDC coverage →</a>
+        </div>
+      </section>
+""",
+    "satvhr-stm": """
+      <section id="in-the-media">
+        <h2>In the media</h2>
+        <div class="project-media">
+          <ul>
+            <li><a href="https://telesintese.com.br/satelite-brasileiro-satvhr-conclui-teste-critico-de-vibracao-para-lancamento/" target="_blank" rel="noopener noreferrer">Telesíntese (2026-05-13)</a> - STM vibration testing at INPE/LIT.</li>
+            <li><a href="https://visionaespacial.com/2026-05-13-visiona-conclui-com-sucesso-teste-critico-de-desenvolvimento-do-satelite-satvhr/" target="_blank" rel="noopener noreferrer">Visiona (2026-05-13)</a> - official STM vibration campaign release.</li>
+            <li><a href="https://fiesc.com.br/pt-br/imprensa/senaisc-integra-projeto-premiado-com-maior-grau-de-conteudo-nacional-da-historia-espacial" target="_blank" rel="noopener noreferrer">FIESC/SENAI-SC (2026-03-19)</a> - SatVHR wins 2025 FINEP Innovation Award.</li>
+          </ul>
+          <a class="media-more" href="/media/#satvhr">All SATVHR coverage →</a>
+        </div>
+      </section>
+""",
+    "vcub1-assembly": """
+      <section id="in-the-media">
+        <h2>In the media</h2>
+        <div class="project-media">
+          <ul>
+            <li><a href="https://pesquisaparainovacao.fapesp.br/primeiro_satelite_de_observacao_da_terra_e_coleta_de_dados_projetado_pela_industria_nacional_e_lancado_nos_eua/2703" target="_blank" rel="noopener noreferrer">FAPESP (2023-04-15)</a> - VCUB1 launch coverage.</li>
+            <li><a href="https://visionaespacial.com/visiona-comemora-um-ano-do-lancamento-do-satelite-vcub1/" target="_blank" rel="noopener noreferrer">Visiona (2024-04-15)</a> - one year in orbit.</li>
+          </ul>
+          <a class="media-more" href="/media/#vcub1">All VCUB1 coverage →</a>
+        </div>
+      </section>
+""",
+}
 
 def render(project: dict) -> str:
     return f"""{HEAD.format(title=project['title'], description=project['summary'], slug=project['slug'])}
@@ -520,6 +563,7 @@ def render(project: dict) -> str:
         <h2>Tools</h2>
         {tools_html(project['tools'])}
       </section>
+{MEDIA_SECTIONS.get(project["slug"], "")}
       <section id="confidentiality">
         <h2>Confidentiality</h2>
         <p class="note">No confidential Visiona or Thales Alenia Space data, drawings, or datasets are published on this page. Figures marked PLACEHOLDER must be replaced only with material cleared for public release. TVAC for SATVHR is not yet done and is not claimed here.</p>
@@ -536,6 +580,7 @@ def render(project: dict) -> str:
         <li><a href="#manufacturing-test">Manufacturing &amp; test</a></li>
         <li><a href="#lessons">Lessons</a></li>
         <li><a href="#tools">Tools</a></li>
+        {('<li><a href="#in-the-media">In the media</a></li>' if project["slug"] in MEDIA_SECTIONS else '')}
         <li><a href="#confidentiality">Confidentiality</a></li>
       </ol>
     </aside>
