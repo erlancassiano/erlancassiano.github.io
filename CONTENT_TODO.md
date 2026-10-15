@@ -43,6 +43,20 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] PT-BR full portfolio translation (currently `/pt/` is a short bridge page)
 - [ ] Any awards/volunteer blurbs you want surfaced on the home page
 
+## Featured flags
+
+Each CV-like item uses `data-featured="true|false"` (projects also have `"featured"` in `scripts/projects.json`). Flip the attribute (and JSON for projects) to change what appears before **See more**.
+
+| Section | Featured (`true`) | Collapsed (`false`) |
+|---|---|---|
+| Work timeline | Visiona (both roles), Fox17, Thales Alenia Space | RuaDois, Funcate, CIV, SET-G/CNPq/AEB/INPE, Autotrac |
+| Education timeline | ITA M.Sc., UnB bachelor’s | Certifications & courses summary, MBA |
+| Certifications | TSTI, SENAI CNC, Creo (Mult-e), ATI | SENAI CAM, Awari Data Science, HubSpot |
+| Publications | IAC 2024 (VCUB1 TVAC) | Bertoldi 2016, UnB 2013, COBEF 2013, P&D Design 2012 |
+| Projects | SATVHR, SGDC, VCUB1 | MGSE, MHD wheel, AM, Fox17 chimneys, UnB hybrid |
+| Media | All current SGDC / SATVHR / VCUB1 items | _(none yet)_ |
+| Skills groups | All groups | _(none)_ |
+
 ## Certifications / LinkedIn gaps
 
 Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Certifications & Courses were filled from CV PDFs in `/cv/` plus indexed public LinkedIn Licenses & Certifications / Courses content. Confirm or supply:

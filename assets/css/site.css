@@ -1010,6 +1010,45 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 .site-footer a { color: var(--fg-muted); text-decoration: none; }
 .site-footer a:hover { color: var(--accent); }
 
+/* —— Featured lists (See more / See less) ——
+   With JS: hide non-featured until expanded.
+   No-JS / print: show all; toggle buttons hidden in print. */
+html.js-featured [data-featured-list]:not(.is-expanded) > [data-featured="false"] {
+  display: none !important;
+}
+
+.featured-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.55rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--fg);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.featured-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.featured-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media print {
+  html.js-featured [data-featured-list] > [data-featured="false"] {
+    display: revert !important;
+  }
+  .featured-toggle {
+    display: none !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {

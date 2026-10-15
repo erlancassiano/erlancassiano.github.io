@@ -71,8 +71,8 @@
         <h2>Projects</h2>
         <p class="lede">Case studies across CAD, FEA, thermal support, test, additive manufacturing, and calculations. Placeholder media is marked clearly until cleared images arrive.</p>
       </div>
-      <div class="project-grid">
-        <a class="project-card" href="/projects/satvhr-stm/">
+      <div class="project-grid" id="project-list" data-featured-list>
+        <a class="project-card" href="/projects/satvhr-stm/" data-featured="true">
           <div class="media"><img src="/assets/img/satvhr/satvhr-card.jpg" alt="SatVHR Structural Thermal Model with copper MLI and optical baffle" width="800" height="488"></div>
           <div class="body">
             <p class="meta">Visiona · 2023–present</p>
@@ -82,7 +82,7 @@
           </div>
         </a>
 
-        <a class="project-card" href="/projects/sgdc-propulsion/">
+        <a class="project-card" href="/projects/sgdc-propulsion/" data-featured="true">
           <div class="media"><img src="/assets/img/sgdc/sgdc-card.jpg" alt="Fully assembled SGDC satellite in a cleanroom" width="800" height="534"></div>
           <div class="body">
             <p class="meta">Thales Alenia Space · 2014–2016</p>
@@ -92,7 +92,7 @@
           </div>
         </a>
 
-        <a class="project-card" href="/projects/vcub1-assembly/">
+        <a class="project-card" href="/projects/vcub1-assembly/" data-featured="true">
           <div class="media"><img src="/assets/img/vcub1/vcub1-card.jpg" alt="VCUB1 CubeSat with solar panels deployed" width="800" height="533"></div>
           <div class="body">
             <p class="meta">Visiona · 2023</p>
@@ -101,7 +101,7 @@
             <ul class="tags"><li>CAD</li><li>Test</li><li>Additive Manufacturing</li></ul>
           </div>
         </a>
-        <a class="project-card" href="/projects/mgse-lifting/">
+        <a class="project-card" href="/projects/mgse-lifting/" data-featured="false">
           <div class="media"><img src="/assets/img/placeholders/structure.png" alt="" width="640" height="400"></div>
           <div class="body">
             <p class="meta">Visiona · STM AIT</p>
@@ -110,7 +110,7 @@
             <ul class="tags"><li>CAD</li><li>Test</li><li>Calculations</li></ul>
           </div>
         </a>
-        <a class="project-card" href="/projects/mhd-reaction-wheel/">
+        <a class="project-card" href="/projects/mhd-reaction-wheel/" data-featured="false">
           <div class="media"><img src="/assets/img/placeholders/cad-panel.png" alt="" width="640" height="400"></div>
           <div class="body">
             <p class="meta">ITA M.Sc. · 2025–2027</p>
@@ -119,7 +119,7 @@
             <ul class="tags"><li>CAD</li><li>Calculations</li><li>Test</li><li>Additive Manufacturing</li></ul>
           </div>
         </a>
-        <a class="project-card" href="/projects/additive-manufacturing/">
+        <a class="project-card" href="/projects/additive-manufacturing/" data-featured="false">
           <div class="media"><img src="/assets/img/placeholders/print-am.png" alt="" width="640" height="400"></div>
           <div class="body">
             <p class="meta">AM · supporting hardware</p>
@@ -128,7 +128,7 @@
             <ul class="tags"><li>Additive Manufacturing</li><li>CAD</li><li>Test</li></ul>
           </div>
         </a>
-        <a class="project-card" href="/projects/fox17-chimneys/">
+        <a class="project-card" href="/projects/fox17-chimneys/" data-featured="false">
           <div class="media"><img src="/assets/img/placeholders/structure.png" alt="" width="640" height="400"></div>
           <div class="body">
             <p class="meta">Fox17 · 2015–2023</p>
@@ -137,7 +137,7 @@
             <ul class="tags"><li>CAD</li><li>Calculations</li><li>FEA</li></ul>
           </div>
         </a>
-        <a class="project-card" href="/projects/unb-hybrid-rocket/">
+        <a class="project-card" href="/projects/unb-hybrid-rocket/" data-featured="false">
           <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400"></div>
           <div class="body">
             <p class="meta">UnB · 2012–2013</p>
@@ -164,8 +164,8 @@
 
       <div class="timeline-block" id="work">
         <h3 class="timeline-block-title">Work Experience</h3>
-        <ol class="timeline">
-          <li>
+        <ol class="timeline" id="work-list" data-featured-list>
+          <li data-featured="true">
             <p class="when">2023 – present</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -180,7 +180,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="true">
             <p class="when">Jan – Mar 2023</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -192,7 +192,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Oct 2018 – Jul 2024</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -200,7 +200,7 @@
               <p class="org">RuaDois · São Paulo</p>
             </div>
           </li>
-          <li>
+          <li data-featured="true">
             <p class="when">Jul 2015 – Jun 2023</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -211,7 +211,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Feb – Nov 2020</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -222,7 +222,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Nov 2016 – May 2018</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -230,7 +230,7 @@
               <p class="org">CIV · Brasília</p>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Oct 2016 – Sep 2017</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -239,7 +239,7 @@
               <p>One-year fellowship supporting educational devices and modelling missions, engines and launchers for investment planning.</p>
             </div>
           </li>
-          <li>
+          <li data-featured="true">
             <p class="when">Mar 2014 – Oct 2016</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -251,7 +251,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Feb – Apr 2014</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -267,8 +267,8 @@
 
       <div class="timeline-block" id="education">
         <h3 class="timeline-block-title">Education &amp; Courses</h3>
-        <ol class="timeline">
-          <li>
+        <ol class="timeline" id="education-list" data-featured-list>
+          <li data-featured="true">
             <p class="when">Jul 2025 – Jul 2027</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -277,7 +277,7 @@
               <p>Thesis: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control. Advisor: Prof. Tiago de Paula. Expected Jul 2027.</p>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">2023 – 2024</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -291,7 +291,7 @@
               </ul>
             </div>
           </li>
-          <li>
+          <li data-featured="false">
             <p class="when">Jun 2019 – Nov 2021</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -299,7 +299,7 @@
               <p class="org">Universidade Cruzeiro do Sul · Online</p>
             </div>
           </li>
-          <li>
+          <li data-featured="true">
             <p class="when">Jun 2008 – Jun 2013</p>
             <span class="dot" aria-hidden="true"></span>
             <div class="content">
@@ -383,25 +383,25 @@
         <p class="kicker">Writing</p>
         <h2>Publications</h2>
       </div>
-      <ul class="pub-list">
-        <li>
+      <ul class="pub-list" id="publications-list" data-featured-list>
+        <li data-featured="true">
           <strong>Silva, S. et al., incl. Cassiano, E. (2024).</strong>
           <cite> Vcub1 Brazilian CubeSat Thermal Vacuum Tests Campaign. 75th International Astronautical Congress (IAC 2024), Milan, IAC-24-B4.IP.21.
           <a href="https://doi.org/10.52202/078365-0126">doi:10.52202/078365-0126</a></cite>
         </li>
-        <li>
+        <li data-featured="false">
           <strong>Bertoldi, A. E. M.; Cassiano, E. R. S. et al. (2016).</strong>
           <cite> A Study of the Atomization Process Using Numerical Simulation. CILAMCE 2016, RIPE (UnB) v.2 n.31. CFD (ANSYS CFX) of a pressure-swirl atomiser.</cite>
         </li>
-        <li>
+        <li data-featured="false">
           <strong>Cassiano, E. (2013).</strong>
           <cite> Projeto de uma Bancada Experimental para o Teste de Motores Foguetes com Propulsão Híbrida. 19th UnB Scientific Initiation Congress (19º Congresso de Iniciação Científica da UnB).</cite>
         </li>
-        <li>
+        <li data-featured="false">
           <strong>Piratelli-Filho, A. et al., incl. Cassiano, E. R. S. (2013).</strong>
           <cite> Planejamento do Processo de Medição com Scanner Laser Tridimensional. COBEF 2013.</cite>
         </li>
-        <li>
+        <li data-featured="false">
           <strong>P&amp;D Design (2012).</strong>
           <cite> Paper associated with P&amp;D Design 2012.</cite>
           <p class="todo" style="margin:0.65rem 0 0"><strong>TODO</strong> - Erlan: full citation not found in current site/CV text (title, authors, venue/proceedings). Supply exact bibliographic details.</p>
@@ -422,37 +422,37 @@
           <a href="#languages">Languages</a>
         </p>
       </div>
-      <div class="cert-grid">
-        <article class="cert-card">
+      <div class="cert-grid" id="certifications-list" data-featured-list>
+        <article class="cert-card" data-featured="true">
           <h3>Designing Space Missions and Systems</h3>
           <p class="cert-meta"><span class="cert-issuer">Teaching Science &amp; Technology Inc. (TSTI)</span><span class="cert-year">2024</span></p>
           <p class="cert-note">40 h</p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="true">
           <h3>CNC machining-centre programming, setup and operation for aerospace</h3>
           <p class="cert-meta"><span class="cert-issuer">SENAI</span><span class="cert-year">2024</span></p>
           <p class="cert-note">120 h</p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="false">
           <h3>CAM programming for CNC machining centres and lathes</h3>
           <p class="cert-meta"><span class="cert-issuer">SENAI</span></p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="true">
           <h3>Creo Parametric</h3>
           <p class="cert-meta"><span class="cert-issuer">Mult-e Engenharia Digital</span><span class="cert-year">2023</span></p>
           <p class="cert-note">20 h · issued Nov 2023</p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="true">
           <h3>Space Mission Structures</h3>
           <p class="cert-meta"><span class="cert-issuer">Applied Technology Institute (ATI)</span><span class="cert-year">2023</span></p>
           <p class="cert-note">40 h · issued Sep 2023</p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="false">
           <h3>Data Science</h3>
           <p class="cert-meta"><span class="cert-issuer">Awari</span><span class="cert-year">2021</span></p>
           <p class="cert-note">Issued Nov 2021</p>
         </article>
-        <article class="cert-card">
+        <article class="cert-card" data-featured="false">
           <h3>Service Hub Software</h3>
           <p class="cert-meta"><span class="cert-issuer">HubSpot Academy</span><span class="cert-year">2021</span></p>
           <p class="cert-note">Issued Oct 2021 · expired Nov 2022</p>
@@ -469,8 +469,8 @@
         <h2>Skills &amp; Tools</h2>
         <p class="lede">CAD, analysis, design practice, standards, and AIT — grouped for scanning.</p>
       </div>
-      <div class="skill-groups">
-        <div class="skill-group">
+      <div class="skill-groups" id="skills-list" data-featured-list>
+        <div class="skill-group" data-featured="true">
           <h3>CAD</h3>
           <ul class="tags">
             <li>SolidWorks (~10 yrs)</li>
@@ -478,32 +478,32 @@
             <li>Onshape (4)</li>
           </ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-featured="true">
           <h3>Structural FEM</h3>
           <ul class="tags">
             <li>Femap/Nastran</li>
           </ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-featured="true">
           <h3>Thermal</h3>
           <ul class="tags">
             <li>Thermal Desktop/SINDA</li>
           </ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-featured="true">
           <h3>Design</h3>
           <ul class="tags">
             <li>GD&amp;T &amp; tolerance stack-up (ISO)</li>
             <li>Design for manufacturing</li>
           </ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-featured="true">
           <h3>Standards</h3>
           <ul class="tags">
             <li>ECSS (tailored)</li>
           </ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group" data-featured="true">
           <h3>Testing / AIT</h3>
           <ul class="tags">
             <li>Sine vibration</li>

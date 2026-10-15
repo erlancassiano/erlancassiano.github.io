@@ -42,4 +42,34 @@
   document.querySelectorAll("[data-year]").forEach((el) => {
     el.textContent = String(new Date().getFullYear());
   });
+
+  // Featured lists: show featured items only; "See more" reveals the rest.
+  // No-JS and print show everything (CSS gate is html.js-featured).
+  document.querySelectorAll("[data-featured-list]").forEach((list, index) => {
+    const extras = list.querySelectorAll(':scope > [data-featured="false"]');
+    if (!extras.length) return;
+
+    if (!list.id) {
+      list.id = "featured-list-" + String(index + 1);
+    }
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "featured-toggle";
+    btn.setAttribute("aria-expanded", "false");
+    btn.setAttribute("aria-controls", list.id);
+    const moreLabel = list.getAttribute("data-more-label") || "See more";
+    const lessLabel = list.getAttribute("data-less-label") || "See less";
+    btn.textContent = moreLabel;
+
+    btn.addEventListener("click", () => {
+      const expanded = list.classList.toggle("is-expanded");
+      btn.setAttribute("aria-expanded", String(expanded));
+      btn.textContent = expanded ? lessLabel : moreLabel;
+    });
+
+    list.insertAdjacentElement("afterend", btn);
+  });
+
+  document.documentElement.classList.add("js-featured");
 })();

@@ -2,7 +2,7 @@
   {
     "slug": "satvhr-stm",
     "title": "SATVHR mechanical architecture & STM vibration qualification",
-    "meta": "Visiona \u00b7 LEO Earth observation \u00b7 Phase B/C \u00b7 2023\u0096present",
+    "meta": "Visiona · LEO Earth observation · Phase B/C · 2023present",
     "tags": [
       "CAD",
       "FEA",
@@ -11,48 +11,52 @@
       "Calculations"
     ],
     "image": "/assets/img/satvhr/satvhr-card.jpg",
-    "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026)."
+    "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).",
+    "featured": true
   },
   {
     "slug": "sgdc-propulsion",
     "title": "SGDC propulsion technology transfer",
-    "meta": "Thales Alenia Space \u00b7 Cannes \u00b7 AEB programme \u00b7 2014\u20132016",
+    "meta": "Thales Alenia Space · Cannes · AEB programme · 2014–2016",
     "tags": [
       "Calculations",
       "Test",
       "CAD"
     ],
     "image": "/assets/img/sgdc/sgdc-card.jpg",
-    "summary": "On-the-job training on Brazil\u2019s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M."
+    "summary": "On-the-job training on Brazil’s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M.",
+    "featured": true
   },
   {
     "slug": "vcub1-assembly",
     "title": "VCUB1 final flight assembly",
-    "meta": "Visiona \u00b7 12 kg CubeSat \u00b7 Falcon 9 Transporter-7 \u00b7 2023",
+    "meta": "Visiona · 12 kg CubeSat · Falcon 9 Transporter-7 · 2023",
     "tags": [
       "CAD",
       "Test",
       "Additive Manufacturing"
     ],
     "image": "/assets/img/vcub1/vcub1-card.jpg",
-    "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch."
+    "summary": "Final flight assembly of the 12 kg VCUB1 CubeSat, including delta vibration and solar-panel deployment checks ahead of Falcon 9 launch.",
+    "featured": true
   },
   {
     "slug": "mgse-lifting",
-    "title": "Lifting & handling MGSE \u0097 concept",
-    "meta": "Visiona \u00b7 SATVHR STM AIT \u00b7 concept lead",
+    "title": "Lifting & handling MGSE  concept",
+    "meta": "Visiona · SATVHR STM AIT · concept lead",
     "tags": [
       "CAD",
       "Test",
       "Calculations"
     ],
     "image": "/assets/img/placeholders/structure.png",
-    "summary": "Led the concept for the lifting and handling MGSE; detailed design and build by a subcontracted supplier; tested during the STM AIT campaign."
+    "summary": "Led the concept for the lifting and handling MGSE; detailed design and build by a subcontracted supplier; tested during the STM AIT campaign.",
+    "featured": false
   },
   {
     "slug": "mhd-reaction-wheel",
     "title": "MHD magnetic-fluid reaction wheel",
-    "meta": "ITA M.Sc. thesis \u00b7 in progress \u00b7 2025\u00962027",
+    "meta": "ITA M.Sc. thesis · in progress · 20252027",
     "tags": [
       "CAD",
       "Calculations",
@@ -60,42 +64,46 @@
       "Additive Manufacturing"
     ],
     "image": "/assets/img/placeholders/cad-panel.png",
-    "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control."
+    "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control.",
+    "featured": false
   },
   {
     "slug": "additive-manufacturing",
     "title": "3D printing projects",
-    "meta": "Personal / supporting hardware \u00b7 AM",
+    "meta": "Personal / supporting hardware · AM",
     "tags": [
       "Additive Manufacturing",
       "CAD",
       "Test"
     ],
     "image": "/assets/img/placeholders/print-am.png",
-    "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples."
+    "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples.",
+    "featured": false
   },
   {
     "slug": "fox17-chimneys",
-    "title": "Fox17 \u0097 80 t chimneys & flanges",
-    "meta": "Fox17 \u00b7 industrial structures \u00b7 export \u00b7 2015\u00962023",
+    "title": "Fox17  80 t chimneys & flanges",
+    "meta": "Fox17 · industrial structures · export · 20152023",
     "tags": [
       "CAD",
       "Calculations",
       "FEA"
     ],
     "image": "/assets/img/placeholders/structure.png",
-    "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators)."
+    "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
+    "featured": false
   },
   {
     "slug": "unb-hybrid-rocket",
     "title": "UnB hybrid rocket static-fire test bench",
-    "meta": "Universidade de Bras\u00edlia \u00b7 research \u00b7 2012\u00962013",
+    "meta": "Universidade de Brasília · research · 20122013",
     "tags": [
       "CAD",
       "Test",
       "Calculations"
     ],
     "image": "/assets/img/placeholders/test-ait.png",
-    "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013)."
+    "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013).",
+    "featured": false
   }
 ]
