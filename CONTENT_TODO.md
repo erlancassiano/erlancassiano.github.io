@@ -56,6 +56,9 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Projects | SATVHR, SGDC, VCUB1 | MGSE, MHD wheel, AM, Fox17 chimneys, UnB hybrid |
 | Media | All current SGDC / SATVHR / VCUB1 items | _(none yet)_ |
 | Skills groups | All groups | _(none)_ |
+| Languages | Portuguese, English, French | _(none)_ |
+| Calculations | Propellant load sensitivity (SGDC) | Mass budget, modal/sine, Python notebooks (TODO slots) |
+| Gallery | First two placeholders | Remaining placeholders |
 
 ## Certifications / LinkedIn gaps
 

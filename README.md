@@ -21,7 +21,7 @@ python3 scripts/build_pages.py
 
 ## Featured items (`data-featured`)
 
-CV-like lists on the home page (and media cards) support a **featured** flag so the page can open focused and expand on demand.
+Every list-type section on the site (work, education, certifications, projects, media, publications, skills, languages, calculations, gallery) supports a **featured** flag so the page can open focused and expand on demand.
 
 - On each item set `data-featured="true"` or `data-featured="false"`.
 - Put the list container on `data-featured-list` (and a stable `id` when practical).
