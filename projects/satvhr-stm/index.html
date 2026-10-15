@@ -6,10 +6,23 @@
 <title>SATVHR mechanical architecture & STM vibration qualification · Erlan Cassiano</title>
 <meta name="description" content="Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).">
 <link rel="canonical" href="https://erlancassiano.github.io/projects/satvhr-stm/">
-<link rel="icon" href="/favicon.png" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SATVHR mechanical architecture &amp; STM vibration qualification · Erlan Cassiano">
+<meta property="og:description" content="Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).">
+<meta property="og:url" content="https://erlancassiano.github.io/projects/satvhr-stm/">
+<meta property="og:image" content="https://erlancassiano.github.io/assets/img/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SATVHR mechanical architecture &amp; STM vibration qualification · Erlan Cassiano">
+<meta name="twitter:description" content="Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).">
+<meta name="twitter:image" content="https://erlancassiano.github.io/assets/img/og-share.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=Syne:wght@700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=Syne:wght@700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=Syne:wght@700&display=swap"></noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="/assets/css/site.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
@@ -25,8 +38,6 @@
     <ul class="nav-links" id="nav-links" data-nav-links>
       <li><a href="/#projects">Projects</a></li>
       <li><a href="/#timeline">Timeline</a></li>
-      <li><a href="/#calculations">Calculations</a></li>
-      <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
       <li><a href="/#certifications">Skills</a></li>
       <li><a href="/media/">In the Media</a></li>
@@ -45,7 +56,7 @@
       <p class="kicker">Case study</p>
       <h1>SATVHR mechanical architecture & STM vibration qualification</h1>
       <p class="lede">Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).</p>
-      <p class="case-meta">Visiona · LEO Earth observation · Phase B/C · 2023present</p>
+      <p class="case-meta">Visiona · LEO Earth observation · Phase B/C · 2023–present</p>
       <ul class="tags"><li>CAD</li><li>FEA</li><li>Thermal</li><li>Test</li><li>Calculations</li></ul>
     </div>
   </header>
@@ -71,20 +82,14 @@
   <li>Mechanical configuration that accommodates the payload within a below-300 kg system mass budget.</li>
   <li>Sandwich-panel primary structure sized for launch environments (flight: CFRP faces; STM: aluminium faces on aluminium honeycomb).</li>
   <li>GD&amp;T and tolerance stack-up per ISO GPS on mechanical drawings.</li>
-  <li>Structuralthermal model (STM) vibration qualification correlated with the FEM.</li>
+  <li>Structural–thermal model (STM) vibration qualification correlated with the FEM.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> - Erlan: paste quantified requirements that are cleared for public release (loads, margins policy, etc.).</p>
 
       </section>
       <section id="approach">
         <h2>Approach</h2>
         
 <p>Layouts and accommodation were driven in Creo. Structural work used Femap/Nastran models for design reviews and troubleshooting; thermal architecture used Thermal Desktop/SINDA. Margin reports documented the structural and thermal posture ahead of system reviews (PRR, PDR), with system / structure / thermal CDRs targeted for end of 2026.</p>
-<div class="math-block">
-<p>Illustrative modal check (placeholder - replace with cleared formula):</p>
-$$\omega_n = \sqrt{\frac{k}{m}}$$
-<p>where $k$ is an effective stiffness and $m$ a modal mass. <span class="todo" style="display:inline;border:none;padding:0;background:none"><strong>TODO</strong>: Erlan to supply the actual relation used in the public write-up.</span></p>
-</div>
 <figure class="case-figure">
   <img src="/assets/img/satvhr/satvhr-01-visiona.jpg" alt="Close-up of the SatVHR STM showing copper multi-layer insulation and a large black cylindrical optical baffle on a grey mounting plate" width="1024" height="624" loading="lazy">
   <figcaption>
@@ -97,7 +102,7 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
       <section id="results">
         <h2>Results</h2>
         
-<div class="results-grid" id="satvhr-stm-results" data-featured-list>
+<div class="results-grid" data-featured-list>
   <div data-featured="true"><strong>&lt; 300 kg</strong><span>System mass class</span></div>
   <div data-featured="true"><strong>May 2026</strong><span>STM vib. qual. passed</span></div>
   <div data-featured="true"><strong>&lt; 0.1 µm</strong><span>Jitter measurement precision</span></div>
@@ -110,7 +115,6 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
     <span class="figure-credit">© Visiona Tecnologia Espacial</span>
   </figcaption>
 </figure>
-<p class="todo"><strong>TODO</strong> - Erlan: add cleared FRF / mode-shape plots and any public numeric margins.</p>
 
       </section>
       <section id="manufacturing-test">
@@ -126,12 +130,6 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
 </figure>
 
       </section>
-      <section id="lessons">
-        <h2>Lessons</h2>
-        
-<p class="todo"><strong>TODO</strong> - Erlan: 24 lessons learned cleared for publication (configuration trades, correlation practices, MGSE interfaces, etc.).</p>
-
-      </section>
       <section id="tools">
         <h2>Tools</h2>
         <ul class="tags"><li>Creo Parametric</li><li>Femap/Nastran</li><li>Thermal Desktop/SINDA</li><li>GD&T / ISO GPS</li><li>MATLAB</li><li>Python</li></ul>
@@ -141,9 +139,9 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
         <h2>In the media</h2>
         <div class="project-media">
           <ul>
-            <li><a href="https://telesintese.com.br/satelite-brasileiro-satvhr-conclui-teste-critico-de-vibracao-para-lancamento/" target="_blank" rel="noopener noreferrer">Telesíntese (2026-05-13)</a> — STM vibration testing at INPE/LIT.</li>
-            <li><a href="https://visionaespacial.com/2026-05-13-visiona-conclui-com-sucesso-teste-critico-de-desenvolvimento-do-satelite-satvhr/" target="_blank" rel="noopener noreferrer">Visiona (2026-05-13)</a> — official STM vibration campaign release.</li>
-            <li><a href="https://fiesc.com.br/pt-br/imprensa/senaisc-integra-projeto-premiado-com-maior-grau-de-conteudo-nacional-da-historia-espacial" target="_blank" rel="noopener noreferrer">FIESC/SENAI-SC (2026-03-19)</a> — SatVHR wins 2025 FINEP Innovation Award.</li>
+            <li><a href="https://telesintese.com.br/satelite-brasileiro-satvhr-conclui-teste-critico-de-vibracao-para-lancamento/" target="_blank" rel="noopener noreferrer">Telesíntese (2026-05-13)</a> - STM vibration testing at INPE/LIT.</li>
+            <li><a href="https://visionaespacial.com/2026-05-13-visiona-conclui-com-sucesso-teste-critico-de-desenvolvimento-do-satelite-satvhr/" target="_blank" rel="noopener noreferrer">Visiona (2026-05-13)</a> - official STM vibration campaign release.</li>
+            <li><a href="https://fiesc.com.br/pt-br/imprensa/senaisc-integra-projeto-premiado-com-maior-grau-de-conteudo-nacional-da-historia-espacial" target="_blank" rel="noopener noreferrer">FIESC/SENAI-SC (2026-03-19)</a> - SatVHR wins 2025 FINEP Innovation Award.</li>
           </ul>
           <a class="media-more" href="/media/#satvhr">All SATVHR coverage →</a>
         </div>
@@ -151,7 +149,7 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
 
       <section id="confidentiality">
         <h2>Confidentiality</h2>
-        <p class="note">Press photographs on this page are public Visiona material and are credited © Visiona Tecnologia Espacial. No confidential Visiona or Thales Alenia Space drawings or datasets are published. TVAC for SATVHR is not yet done and is not claimed here.</p>
+        <p class="note">No confidential Visiona or Thales Alenia Space data, drawings, or datasets are published on this page. TVAC for SATVHR is not yet done and is not claimed here.</p>
       </section>
       <p style="margin-top:2rem"><a class="btn ghost" href="/#projects">← All projects</a></p>
     </article>
@@ -163,7 +161,6 @@ $$\omega_n = \sqrt{\frac{k}{m}}$$
         <li><a href="#approach">Approach</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#manufacturing-test">Manufacturing &amp; test</a></li>
-        <li><a href="#lessons">Lessons</a></li>
         <li><a href="#tools">Tools</a></li>
         <li><a href="#in-the-media">In the media</a></li>
         <li><a href="#confidentiality">Confidentiality</a></li>
