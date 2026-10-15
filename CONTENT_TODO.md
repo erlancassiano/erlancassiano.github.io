@@ -43,6 +43,16 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] PT-BR full portfolio translation (currently `/pt/` is a short bridge page)
 - [ ] Any awards/volunteer blurbs you want surfaced on the home page
 
+## Certifications / LinkedIn gaps
+
+Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Certifications & Courses were filled from CV PDFs in `/cv/` plus indexed public LinkedIn Licenses & Certifications / Courses content. Confirm or supply:
+
+- [ ] Year for **CAM programming (SENAI)** — listed on CV next to the 2024 CNC course and on LinkedIn Courses without a year
+- [ ] Credential / certificate links for TSTI, SENAI, Mult-e, ATI, and Awari (only HubSpot had a public credential URL)
+- [ ] Whether **Data Science (Awari)** and **Service Hub Software (HubSpot, expired)** should stay on the mechanical portfolio page
+- [ ] Any additional Licenses & Certifications on LinkedIn not captured in the index (CSM / leadership items intentionally omitted; no PMP or Green Belt found)
+- [ ] Optional: CATIA V5 (academic) under CAD if you want it listed (mentioned in LinkedIn reverse-engineering work; not added by default)
+
 ## Hard rules already applied on the site
 
 - Headline focus: **Spacecraft Mechanical Design Engineer**

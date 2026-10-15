@@ -695,6 +695,106 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   .contact-grid { grid-template-columns: 1fr; }
 }
 
+/* —— Certifications / skills / languages —— */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+.cert-card {
+  border: 1px solid var(--line);
+  background: var(--bg-elev);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-height: 100%;
+}
+.cert-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+}
+.cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 0.75rem;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--fg-muted);
+}
+.cert-issuer { text-transform: uppercase; }
+.cert-year {
+  color: var(--accent-2);
+  white-space: nowrap;
+}
+.cert-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+}
+.cert-link {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+}
+.cert-link a { text-decoration: none; border-bottom: 1px solid var(--line); }
+.cert-link a:hover { border-color: var(--accent); }
+
+.skill-groups {
+  display: grid;
+  gap: 1.35rem;
+}
+.skill-group h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+.skill-group .tags li {
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 0.78rem;
+  color: var(--fg);
+  background: var(--bg-elev);
+}
+
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  max-width: 40rem;
+}
+.lang-list li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 10rem) minmax(0, 1fr);
+  gap: 0.75rem 1.25rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+@media (max-width: 500px) {
+  .lang-list li { grid-template-columns: 1fr; gap: 0.2rem; }
+}
+.lang-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.lang-level {
+  color: var(--fg-muted);
+  font-size: 0.98rem;
+}
+
 /* —— Case study —— */
 .case-hero {
   padding: clamp(2.5rem, 7vw, 4.5rem) 0 2rem;

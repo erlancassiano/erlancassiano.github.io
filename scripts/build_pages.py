@@ -36,6 +36,7 @@ NAV = """<!doctype html>
       <li><a href="/#calculations">Calculations</a></li>
       <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
+      <li><a href="/#certifications">Skills</a></li>
       <li><a href="/media/">In the Media</a></li>
       <li><a href="/resume.html" aria-current="false">Resume</a></li>
       <li><a href="/#contact">Contact</a></li>
@@ -468,6 +469,7 @@ HEAD = """<!doctype html>
       <li><a href="/#calculations">Calculations</a></li>
       <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
+      <li><a href="/#certifications">Skills</a></li>
       <li><a href="/media/">In the Media</a></li>
       <li><a href="/resume.html">Resume</a></li>
       <li><a href="/#contact">Contact</a></li>
