@@ -81,16 +81,78 @@
     "featured": false
   },
   {
-    "slug": "fox17-chimneys",
-    "title": "Fox17  80 t chimneys & flanges",
-    "meta": "Fox17 · industrial structures · export · 20152023",
+    "slug": "fox17-chimney-bolivia",
+    "title": "Export steel chimney, 102.7 m (cement plant, Bolivia)",
+    "meta": "Fox17 · cement plant export · 2016",
     "tags": [
       "CAD",
       "Calculations",
       "FEA"
     ],
-    "image": "/assets/img/placeholders/structure.png",
-    "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
+    "image": "/assets/img/fox17/chimney-itacamba-01.jpg",
+    "summary": "102.7 m steel chimney, base Ø3.83 m, ~128 t, 10 bolted flanges, designed to ASME STS-1-2011. Author/designer of chimney and flanges.",
+    "featured": true
+  },
+  {
+    "slug": "fox17-chimney-strakes",
+    "title": "Steel chimney, ~95 m with helical strakes (cement plant)",
+    "meta": "Fox17 · cement plant · 2015",
+    "tags": [
+      "CAD",
+      "Calculations",
+      "FEA"
+    ],
+    "image": "/assets/img/fox17/chimney-cimesa-03.jpg",
+    "summary": "~95.5 m stack (top at 115 m), base Ø5.04 m, three bolted flanges + baseplate, helical strakes; vortex shedding, wind, seismic and fatigue checks (MECASTACK). Technical data report and QC/approval.",
+    "featured": true
+  },
+  {
+    "slug": "fox17-plant-ventilation",
+    "title": "Compressor-room ventilation & plant piping (cement plant)",
+    "meta": "Fox17 · cement plant · 2016–17",
+    "tags": [
+      "CAD",
+      "CFD",
+      "Piping"
+    ],
+    "image": "/assets/img/fox17/intercement-caf-07.jpg",
+    "summary": "Ventilation design with CFD (SolidWorks Flow Simulation), compressed-air and industrial-water piping, and a palletizer reuse study for a cement plant.",
+    "featured": false
+  },
+  {
+    "slug": "fox17-blast-cabin",
+    "title": "Blast-cleaning cabin in a 40-ft container",
+    "meta": "Fox17 · fabrication · 2015",
+    "tags": [
+      "CAD",
+      "Manufacturing"
+    ],
+    "image": "/assets/img/fox17/blast-cabin-01.jpg",
+    "summary": "Design and fabrication support for a blast-cleaning cabin built into a 40-ft shipping container.",
+    "featured": false
+  },
+  {
+    "slug": "fox17-pulleys",
+    "title": "Machined pulleys & shaft (mining)",
+    "meta": "Fox17 · mining · 2017",
+    "tags": [
+      "CAD",
+      "Manufacturing"
+    ],
+    "image": "/assets/img/fox17/pulley-largo-01.jpg",
+    "summary": "Machined pulleys and shaft for a mining application — as-built hardware after machining and inspection.",
+    "featured": false
+  },
+  {
+    "slug": "fox17-solar-pv",
+    "title": "Grid-tied solar PV systems",
+    "meta": "Fox17 · SFCR · 2016–17",
+    "tags": [
+      "CAD",
+      "Energy"
+    ],
+    "image": "/assets/img/fox17/solar-pv-003a.jpg",
+    "summary": "Grid-tied solar PV (SFCR) installations — roof-mounted arrays designed and delivered in 2016–17.",
     "featured": false
   },
   {

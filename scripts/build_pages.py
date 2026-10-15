@@ -356,17 +356,17 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
     },
     {
         "slug": "fox17-chimneys",
-        "title": "Fox17  80 t chimneys & flanges",
+        "title": "Fox17  ~128 t chimneys & flanges",
         "meta": "Fox17 · industrial structures · export · 20152023",
         "tags": ["CAD", "Calculations", "FEA"],
         "image": "/assets/img/placeholders/structure.png",
-        "summary": "As co-founder & CTO of Fox17, designed 80 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
+        "summary": "As co-founder & CTO of Fox17, designed ~128 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
         "context": """
 <p>Fox17 designed filters and separators for cement plants. Structural design responsibility included large steel chimneys and flange interfaces for export projects.</p>
 """,
         "requirements": """
 <ul>
-  <li>Steel chimneys on the order of 80 t and 100 m+ height, with exportable flange detailing.</li>
+  <li>Steel chimneys on the order of ~128 t and 100 m+ height, with exportable flange detailing.</li>
   <li class="todo"><strong>TODO</strong> - Erlan: codes/standards and wind/seismic load basis if publishable.</li>
 </ul>
 """,
@@ -379,7 +379,7 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
 """,
         "results": """
 <div class="results-grid" data-featured-list>
-  <div data-featured="true"><strong>80 t</strong><span>Chimney class</span></div>
+  <div data-featured="true"><strong>~128 t</strong><span>Chimney class</span></div>
   <div data-featured="true"><strong>100 m+</strong><span>Height class</span></div>
 </div>
 <p class="todo"><strong>TODO</strong> - Erlan: export destinations / project names only if cleared; no invented performance claims.</p>

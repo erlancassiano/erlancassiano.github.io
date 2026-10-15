@@ -11,7 +11,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] MGSE as-built photos (no confidential markings)
 - [ ] MHD thesis figures / prototypes (when available)
 - [ ] 3D-print gallery set
-- [ ] Fox17 chimney / flange drawings or photos (cleared)
+- [x] Fox17 chimney / flange drawings or photos (cleared) â€” under `assets/img/fox17/`
 - [ ] UnB hybrid-rocket bench photos
 - [ ] Optional portrait for About/Contact
 
@@ -35,7 +35,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 ## Resume / CV files
 
 - [ ] Confirm the embedded PT-BR Mechanical Design PDF (`cv/Erlan-Cassiano_CV_Mechanical-Design-PT-BR_22ec.pdf`) is the preferred public version
-- [ ] Optionally refresh EN-targeted PDFs already in `/cv/` so they match the new headline (Mechanical Design, not Space Systems; no “manage 4 junior engineers”; SATVHR below 300 kg)
+- [ ] Optionally refresh EN-targeted PDFs already in `/cv/` so they match the new headline (Mechanical Design, not Space Systems; no Â“manage 4 junior engineersÂ”; SATVHR below 300 kg)
 
 ## Copy polish
 
@@ -50,10 +50,10 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Section | Featured (`true`) | Collapsed (`false`) |
 |---|---|---|
 | Work timeline | Visiona (both roles), Fox17, Thales Alenia Space | RuaDois, Funcate, CIV, SET-G/CNPq/AEB/INPE, Autotrac |
-| Education timeline | ITA M.Sc., UnB bachelor’s | Certifications & courses summary, MBA |
+| Education timeline | ITA M.Sc., UnB bachelorÂ’s | Certifications & courses summary, MBA |
 | Certifications | TSTI, SENAI CNC, Creo (Mult-e), ATI | SENAI CAM, Awari Data Science, HubSpot |
 | Publications | IAC 2024 (VCUB1 TVAC) | Bertoldi 2016, UnB 2013, COBEF 2013, P&D Design 2012 |
-| Projects | SATVHR, SGDC, VCUB1 | MGSE, MHD wheel, AM, Fox17 chimneys, UnB hybrid |
+| Projects | SATVHR, SGDC, VCUB1, Fox17 chimneys (Bolivia 102.7 m & ~95 m strakes) | MGSE, MHD wheel, AM, Fox17 ventilation/blast/pulleys/solar, UnB hybrid |
 | Media | All current SGDC / SATVHR / VCUB1 items | _(none yet)_ |
 | Skills groups | All groups | _(none)_ |
 | Languages | Portuguese, English, French | _(none)_ |
@@ -61,14 +61,14 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Gallery | First two placeholders | Remaining placeholders |
 | Hero stats | All four headline numbers | _(none)_ |
 | Contact | Direct card, Profile card, and all Direct details | _(none)_ |
-| Resume “Also available” | Mechanical Design (EN), Currículo PT-BR | Mechanical Structures, Thermal & AIT, Space Systems |
+| Resume Â“Also availableÂ” | Mechanical Design (EN), CurrÃ­culo PT-BR | Mechanical Structures, Thermal & AIT, Space Systems |
 | Case-study results grids | All result cells (where present) | _(none)_ |
 
 ## Certifications / LinkedIn gaps
 
 Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Certifications & Courses were filled from CV PDFs in `/cv/` plus indexed public LinkedIn Licenses & Certifications / Courses content. Confirm or supply:
 
-- [ ] Year for **CAM programming (SENAI)** — listed on CV next to the 2024 CNC course and on LinkedIn Courses without a year
+- [ ] Year for **CAM programming (SENAI)** Â— listed on CV next to the 2024 CNC course and on LinkedIn Courses without a year
 - [ ] Credential / certificate links for TSTI, SENAI, Mult-e, ATI, and Awari (only HubSpot had a public credential URL)
 - [ ] Whether **Data Science (Awari)** and **Service Hub Software (HubSpot, expired)** should stay on the mechanical portfolio page
 - [ ] Any additional Licenses & Certifications on LinkedIn not captured in the index (CSM / leadership items intentionally omitted; no PMP or Green Belt found)
@@ -77,10 +77,15 @@ Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Ce
 ## Hard rules already applied on the site
 
 - Headline focus: **Spacecraft Mechanical Design Engineer**
-- No “manage / lead a team of N juniors” wording
+- No Â“manage / lead a team of N juniorsÂ” wording
 - SATVHR: **below 300 kg** (never 500 kg)
 - SGDC: **more than 16 kg** propellant, **~2.5 months**, **~R$ 36M**
-- Jitter: **precision better than 0.1 µm**
+- Jitter: **precision better than 0.1 Âµm**
 - MGSE: **led the concept** (detailed & built by subcontractor)
 - SATVHR **TVAC not yet done**
 - **No confidential Visiona/Thales data**
+
+
+## Fox17 / Daedalus case studies
+
+Added under `/projects/fox17-*` with images from `assets/img/fox17/` (MANIFEST captions). Cards keep client names generic; work-timeline Fox17 entry may name Intercement, Votorantim, Tecnomont. Chimney mass wording is **~128 t** (not 80 t).

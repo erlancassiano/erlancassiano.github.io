@@ -29,3 +29,8 @@ Source: X:\Obsidian\Second Brain\FOX17-DAEDALUS\01_Projetos_Engenharia. Resized 
 | blast-cabin-02.jpg | Blast-cleaning cabin in 40ft container 002-15 (2015) | Container cabin fabrication photo | 23_jateamento2.jpg |
 | pulley-largo-01.jpg | Pulley & shaft, Largo Resources 023-17 (2017) | Machined pulleys, real product photo | 30_polia1.jpg |
 | solar-pv-003a.jpg | Grid-tied PV systems (SFCR, 2016-17) | Installed PV array (project 003-17) | 33_sfcr003a.jpg |
+
+
+## Portfolio processing
+
+CAD screenshots used on the public site were cropped to remove program-window chrome where practical. Client name strings visible in plant piping drawings were blurred. Filenames retain internal project codes; case-study pages keep client names generic.
