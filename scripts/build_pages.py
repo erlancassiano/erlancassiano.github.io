@@ -421,6 +421,21 @@ $$T = F_{\\mathrm{load\\,cell}}$$
 <p class="todo"><strong>TODO</strong> - Erlan: photos of the bench and any cleared measured curves.</p>
 """,
         "mfg_test": """
+<figure class="case-figure case-video">
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/OxehKBP85ic"
+      title="Cópia de LILE2 test"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  <figcaption>
+    <span class="figure-cap">Cópia de LILE2 test</span>
+    <span class="figure-credit"><a href="https://youtu.be/OxehKBP85ic" target="_blank" rel="noopener noreferrer">YouTube</a></span>
+  </figcaption>
+</figure>
 <p class="todo"><strong>TODO</strong> - Erlan: fabrication of the bench and static-fire safety procedure summary.</p>
 """,
         "lessons": """
