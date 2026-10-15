@@ -13,6 +13,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] 3D-print gallery set
 - [x] Fox17 chimney / flange drawings or photos (cleared) — under `assets/img/fox17/`
 - [ ] UnB hybrid-rocket bench photos
+- [ ] AEB parachute/CanSat deployment bench: photos and CAD (cleared)
 - [ ] Optional portrait for About/Contact
 
 ## Case-study prose
@@ -24,6 +25,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] Additive manufacturing: which projects are public + real measured fits
 - [ ] Fox17: codes/standards and export context if publishable
 - [ ] UnB bench: thrust/instrumentation details from 2013 if still accurate
+- [ ] AEB parachute & CanSat deployment test bench (`/projects/aeb-parachute-cansat-bench/`): year, role/responsibilities, photos/CAD — only confirmed facts
 
 ## Calculations section (`/calculations/`)
 
@@ -53,7 +55,7 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Education timeline | ITA M.Sc., UnB bachelors | Certifications & courses summary, MBA |
 | Certifications | TSTI, SENAI CNC, Creo (Mult-e), ATI | SENAI CAM, Awari Data Science, HubSpot |
 | Publications | IAC 2024 (VCUB1 TVAC) | Bertoldi 2016, UnB 2013, COBEF 2013, P&D Design 2012 |
-| Projects | SATVHR, SGDC, VCUB1, Fox17 chimneys (Bolivia 102.7 m & ~95 m strakes) | MGSE, MHD wheel, AM, Fox17 ventilation/blast/pulleys/solar, UnB hybrid |
+| Projects | SATVHR, SGDC, VCUB1, AEB parachute/CanSat bench, Fox17 chimneys (Bolivia 102.7 m & ~95 m strakes) | MGSE, MHD wheel, AM, Fox17 ventilation/blast/pulleys/solar, UnB hybrid |
 | Media | All current SGDC / SATVHR / VCUB1 items | _(none yet)_ |
 | Skills groups | All groups | _(none)_ |
 | Languages | Portuguese, English, French | _(none)_ |

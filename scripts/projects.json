@@ -41,6 +41,19 @@
     "featured": true
   },
   {
+    "slug": "aeb-parachute-cansat-bench",
+    "title": "Parachute & CanSat deployment test bench (AEB)",
+    "meta": "AEB · rocket test bench",
+    "tags": [
+      "Test",
+      "CAD",
+      "CanSat"
+    ],
+    "image": "/assets/img/aeb-cansat-bench/card.jpg",
+    "summary": "Rocket test bench for parachute deployment and CanSat deployment — a project for AEB (Brazilian Space Agency).",
+    "featured": true
+  },
+  {
     "slug": "mgse-lifting",
     "title": "Lifting & handling MGSE  concept",
     "meta": "Visiona · SATVHR STM AIT · concept lead",
