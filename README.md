@@ -21,7 +21,7 @@ python3 scripts/build_pages.py
 
 ## Featured items (`data-featured`)
 
-Every list-type section on the site (work, education, certifications, projects, media, publications, skills, languages, calculations, gallery) supports a **featured** flag so the page can open focused and expand on demand.
+Every list-type section on the site (work, education, certifications, projects, media, publications, skills, languages, calculations, gallery, hero stats, contact, resume version list) supports a **featured** flag so the page can open focused and expand on demand. Nested chip rows (`ul.tags` inside a card) are not separate sections.
 
 - On each item set `data-featured="true"` or `data-featured="false"`.
 - Put the list container on `data-featured-list` (and a stable `id` when practical).

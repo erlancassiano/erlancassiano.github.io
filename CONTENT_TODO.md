@@ -59,6 +59,10 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Languages | Portuguese, English, French | _(none)_ |
 | Calculations | Propellant load sensitivity (SGDC) | Mass budget, modal/sine, Python notebooks (TODO slots) |
 | Gallery | First two placeholders | Remaining placeholders |
+| Hero stats | All four headline numbers | _(none)_ |
+| Contact | Direct card, Profile card, and all Direct details | _(none)_ |
+| Resume “Also available” | Mechanical Design (EN), Currículo PT-BR | Mechanical Structures, Thermal & AIT, Space Systems |
+| Case-study results grids | All result cells (where present) | _(none)_ |
 
 ## Certifications / LinkedIn gaps
 

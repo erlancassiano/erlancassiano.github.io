@@ -106,10 +106,10 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 </figure>
 """,
         "results": """
-<div class="results-grid">
-  <div><strong>&lt; 300 kg</strong><span>System mass class</span></div>
-  <div><strong>May 2026</strong><span>STM vib. qual. passed</span></div>
-  <div><strong>&lt; 0.1 µm</strong><span>Jitter measurement precision</span></div>
+<div class="results-grid" data-featured-list>
+  <div data-featured="true"><strong>&lt; 300 kg</strong><span>System mass class</span></div>
+  <div data-featured="true"><strong>May 2026</strong><span>STM vib. qual. passed</span></div>
+  <div data-featured="true"><strong>&lt; 0.1 µm</strong><span>Jitter measurement precision</span></div>
 </div>
 <p>STM vibration qualification (sine, random, and sine burst) passed at INPE/LIT in May 2026 and was correlated with the FEM. Jitter on the STM (main telescope mirror displacement under reaction-wheel imbalance) was measured with precision better than 0.1 µm.</p>
 <figure class="case-figure">
@@ -178,10 +178,10 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 </figure>
 """,
         "results": """
-<div class="results-grid">
-  <div><strong>&gt; 16 kg</strong><span>Additional propellant</span></div>
-  <div><strong>~2.5 months</strong><span>Extra service life</span></div>
-  <div><strong>~R$ 36M</strong><span>Life-extension value shown</span></div>
+<div class="results-grid" data-featured-list>
+  <div data-featured="true"><strong>&gt; 16 kg</strong><span>Additional propellant</span></div>
+  <div data-featured="true"><strong>~2.5 months</strong><span>Extra service life</span></div>
+  <div data-featured="true"><strong>~R$ 36M</strong><span>Life-extension value shown</span></div>
 </div>
 <p>AEB later recognised the propellant-loading method that extends SGDC lifetime (Mar 2017). Witnessed SGDC propulsion-related tests in Cannes as a trainee.</p>
 <figure class="case-figure">
@@ -231,10 +231,10 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 </figure>
 """,
         "results": """
-<div class="results-grid">
-  <div><strong>12 kg</strong><span>CubeSat mass</span></div>
-  <div><strong>Apr 2023</strong><span>Transporter-7 launch</span></div>
-  <div><strong>IAC 2024</strong><span>TVAC campaign paper</span></div>
+<div class="results-grid" data-featured-list>
+  <div data-featured="true"><strong>12 kg</strong><span>CubeSat mass</span></div>
+  <div data-featured="true"><strong>Apr 2023</strong><span>Transporter-7 launch</span></div>
+  <div data-featured="true"><strong>IAC 2024</strong><span>TVAC campaign paper</span></div>
 </div>
 <p>Satellite operated in orbit after launch. Co-authored the IAC 2024 paper on the VCUB1 thermal-vacuum test campaign (IAC-24-B4.IP.21).</p>
 """,
@@ -378,9 +378,9 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
 </figure>
 """,
         "results": """
-<div class="results-grid">
-  <div><strong>80 t</strong><span>Chimney class</span></div>
-  <div><strong>100 m+</strong><span>Height class</span></div>
+<div class="results-grid" data-featured-list>
+  <div data-featured="true"><strong>80 t</strong><span>Chimney class</span></div>
+  <div data-featured="true"><strong>100 m+</strong><span>Height class</span></div>
 </div>
 <p class="todo"><strong>TODO</strong> - Erlan: export destinations / project names only if cleared; no invented performance claims.</p>
 """,
