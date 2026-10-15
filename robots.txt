@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /CONTENT_TODO.md
+Disallow: /calculations/
+Disallow: /scripts/
+
+Sitemap: https://erlancassiano.github.io/sitemap.xml

@@ -2,51 +2,25 @@
 # -*- coding: utf-8 -*-
 """Generate case-study HTML pages from project data. Run from repo root."""
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_DIR = ROOT / "projects"
+SITE = "https://erlancassiano.github.io"
+OG_IMAGE = f"{SITE}/assets/img/og-share.jpg"
+FONT_HREF = (
+    "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400"
+    "&family=IBM+Plex+Sans:wght@400;500&family=Syne:wght@700&display=swap"
+)
 
-NAV = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title} · Erlan Cassiano</title>
-<meta name="description" content="{description}">
-<link rel="canonical" href="https://erlancassiano.github.io/projects/{slug}/">
-<link rel="icon" href="/favicon.png" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLtoTAtOmEupStiWXk1gV3" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/site.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLtoTAtOmEupStiWXk1gV3" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzw=" crossorigin="anonymous"
-  onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});"></script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="/">Erlan Cassiano <span>Mech · Space</span></a>
-    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">?</button>
-    <ul class="nav-links" id="nav-links" data-nav-links>
+NAV_LINKS = """\
       <li><a href="/#projects">Projects</a></li>
       <li><a href="/#timeline">Timeline</a></li>
-      <li><a href="/#calculations">Calculations</a></li>
-      <li><a href="/#gallery">Gallery</a></li>
       <li><a href="/#publications">Publications</a></li>
       <li><a href="/#certifications">Skills</a></li>
       <li><a href="/media/">In the Media</a></li>
-      <li><a href="/resume.html" aria-current="false">Resume</a></li>
-      <li><a href="/#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="Toggle theme">DK</button>
-    </div>
-  </div>
-</header>
-"""
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/#contact">Contact</a></li>"""
 
 FOOTER = """
 <footer class="site-footer">
@@ -60,14 +34,11 @@ FOOTER = """
 </html>
 """
 
-# KaTeX CDN integrity hashes above may be wrong - I'll fix with known good URLs without integrity or correct ones
-# Better: use jsdelivr without integrity for simplicity in generated files - I'll fix in the template below
-
 PROJECTS = [
     {
         "slug": "satvhr-stm",
         "title": "SATVHR mechanical architecture & STM vibration qualification",
-        "meta": "Visiona · LEO Earth observation · Phase B/C · 2023present",
+        "meta": "Visiona · LEO Earth observation · Phase B/C · 2023–present",
         "tags": ["CAD", "FEA", "Thermal", "Test", "Calculations"],
         "image": "/assets/img/satvhr/satvhr-card.jpg",
         "summary": "Mechanical and thermal architecture of a below-300 kg LEO Earth-observation satellite, including STM vibration qualification at INPE/LIT (May 2026).",
@@ -86,17 +57,11 @@ PROJECTS = [
   <li>Mechanical configuration that accommodates the payload within a below-300 kg system mass budget.</li>
   <li>Sandwich-panel primary structure sized for launch environments (flight: CFRP faces; STM: aluminium faces on aluminium honeycomb).</li>
   <li>GD&amp;T and tolerance stack-up per ISO GPS on mechanical drawings.</li>
-  <li>Structuralthermal model (STM) vibration qualification correlated with the FEM.</li>
+  <li>Structural–thermal model (STM) vibration qualification correlated with the FEM.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> - Erlan: paste quantified requirements that are cleared for public release (loads, margins policy, etc.).</p>
 """,
         "approach": """
 <p>Layouts and accommodation were driven in Creo. Structural work used Femap/Nastran models for design reviews and troubleshooting; thermal architecture used Thermal Desktop/SINDA. Margin reports documented the structural and thermal posture ahead of system reviews (PRR, PDR), with system / structure / thermal CDRs targeted for end of 2026.</p>
-<div class="math-block">
-<p>Illustrative modal check (placeholder - replace with cleared formula):</p>
-$$\\omega_n = \\sqrt{\\frac{k}{m}}$$
-<p>where $k$ is an effective stiffness and $m$ a modal mass. <span class="todo" style="display:inline;border:none;padding:0;background:none"><strong>TODO</strong>: Erlan to supply the actual relation used in the public write-up.</span></p>
-</div>
 <figure class="case-figure">
   <img src="/assets/img/satvhr/satvhr-01-visiona.jpg" alt="Close-up of the SatVHR STM showing copper multi-layer insulation and a large black cylindrical optical baffle on a grey mounting plate" width="1024" height="624" loading="lazy">
   <figcaption>
@@ -119,7 +84,6 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
     <span class="figure-credit">© Visiona Tecnologia Espacial</span>
   </figcaption>
 </figure>
-<p class="todo"><strong>TODO</strong> - Erlan: add cleared FRF / mode-shape plots and any public numeric margins.</p>
 """,
         "mfg_test": """
 <p>STM AIT and vibration campaign at INPE/LIT. Thermal-vacuum (TVAC) campaign for SATVHR: <strong>not yet done</strong>.</p>
@@ -131,18 +95,16 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   </figcaption>
 </figure>
 """,
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: 24 lessons learned cleared for publication (configuration trades, correlation practices, MGSE interfaces, etc.).</p>
-""",
+        "lessons": "",
         "tools": ["Creo Parametric", "Femap/Nastran", "Thermal Desktop/SINDA", "GD&T / ISO GPS", "MATLAB", "Python"],
     },
     {
-        "slug": 'sgdc-propulsion',
-        "title": 'SGDC propulsion technology transfer',
-        "meta": 'Thales Alenia Space · Cannes · AEB programme · 2014–2016',
-        "tags": ['Calculations', 'Test', 'CAD'],
-        "image": '/assets/img/sgdc/sgdc-card.jpg',
-        "summary": 'On-the-job training on Brazil’s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M.',
+        "slug": "sgdc-propulsion",
+        "title": "SGDC propulsion technology transfer",
+        "meta": "Thales Alenia Space · Cannes · AEB programme · 2014–2016",
+        "tags": ["Calculations", "Test", "CAD"],
+        "image": "/assets/img/sgdc/sgdc-card.jpg",
+        "summary": "On-the-job training on Brazil’s SGDC bipropellant propulsion subsystem; showed that more than 16 kg of additional propellant could be loaded, giving ~2.5 months of life and ~R$ 36M.",
         "context": """
 <p>Selected by the Brazilian Space Agency (AEB) for the SGDC Technology Absorption Programme at Thales Alenia Space in Cannes: about 5,500 h of full-time on-the-job training on the SGDC bipropellant propulsion subsystem (tanks, valves, lines, interfaces), from requirements and design through production, procedures, testing and operation.</p>
 <figure class="case-figure">
@@ -158,7 +120,6 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <li>Understand and follow the bipropellant propulsion lifecycle under ECSS-driven V&amp;V as a trainee on SGDC.</li>
   <li>Assess propulsion performance over life (pressure, thrusters, temperature, propellant gauging), including tank deformation under pressurisation where relevant to loading.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> - Erlan: any additional public requirements or scope notes cleared for this case study.</p>
 """,
         "approach": """
 <p>Worked across the bipropellant propulsion lifecycle with Thales engineers. Showed that more than 16 kg of additional propellant could be loaded on SGDC when accounting for tank deformation under pressurisation.</p>
@@ -194,12 +155,9 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
 """,
         "mfg_test": """
 <p>Press photographs below are from Visiona’s public SGDC assembly, integration and test gallery (Thales Alenia Space facilities). Propulsion tests were witnessed in Cannes during the technology-transfer programme.</p>
-<p class="todo"><strong>TODO</strong> - Erlan: optional cleared notes on which propulsion tests were witnessed (no confidential data).</p>
 """,
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: 2–3 public lessons from the SGDC propulsion transfer (gauging, tank deformation, V&amp;V practices).</p>
-""",
-        "tools": ['Propulsion subsystem V&amp;V', 'ECSS (tailored)', 'Propellant gauging / loading analysis'],
+        "lessons": "",
+        "tools": ["Propulsion subsystem V&amp;V", "ECSS (tailored)", "Propellant gauging / loading analysis"],
     },
     {
         "slug": "vcub1-assembly",
@@ -217,7 +175,6 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <li>Delta vibration and solar-panel deployment verification before launch.</li>
   <li>6U deployer-rail fit-check and integration tooling readiness for Falcon 9.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> - Erlan: add any public mass / volume / interface numbers cleared for this page.</p>
 """,
         "approach": """
 <p>Revised the solar-panel assembly procedure, ran delta vibration and deployment tests, executed the 6U deployer-rail fit-check, reviewed qualification test data, and prepared integration tooling for launch.</p>
@@ -241,14 +198,12 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
         "mfg_test": """
 <p>Delta vibration, solar-panel deployment, deployer fit-check, and the TVAC campaign documented in the IAC 2024 paper. No confidential Visiona/Thales datasets are shown here.</p>
 """,
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: procedure and fit-check lessons suitable for a public case study.</p>
-""",
+        "lessons": "",
         "tools": ["SolidWorks / Onshape", "Assembly procedures", "AIT tooling"],
     },
     {
         "slug": "mgse-lifting",
-        "title": "Lifting & handling MGSE  concept",
+        "title": "Lifting & handling MGSE — concept",
         "meta": "Visiona · SATVHR STM AIT · concept lead",
         "tags": ["CAD", "Test", "Calculations"],
         "image": "/assets/img/placeholders/structure.png",
@@ -262,65 +217,42 @@ $$\\omega_n = \\sqrt{\\frac{k}{m}}$$
   <li>Supplier-deliverable detailed design and manufacture from a clear concept package.</li>
   <li>Verification during the STM AIT campaign.</li>
 </ul>
-<p class="todo"><strong>TODO</strong> - Erlan: public load / factor-of-safety requirements if cleared.</p>
 """,
         "approach": """
 <p>I <strong>led the concept</strong>; detailed design and manufacturing were executed by a subcontracted supplier. Concept work covered lift points, handling envelopes, and interface definition against the STM configuration.</p>
-<div class="math-block">
-<p>Illustrative static lift check (placeholder):</p>
-$$F = n \\, mg$$
-<p>with proof factor $n$ per the applicable MGSE standard. <strong>TODO</strong>: Erlan to replace with the cleared sizing relation.</p>
-</div>
-<figure class="case-figure">
-  <img src="/assets/img/placeholders/cad-panel.png" alt="Placeholder MGSE concept CAD" width="960" height="600">
-  <figcaption>PLACEHOLDER  MGSE concept CAD</figcaption>
-</figure>
 """,
         "results": """
 <p>MGSE was manufactured by the supplier and tested during the STM AIT campaign.</p>
-<p class="todo"><strong>TODO</strong> - Erlan: add cleared photos of the as-built MGSE in use (no confidential markings).</p>
 """,
         "mfg_test": """
 <p>Detailed and built by a subcontractor; functional/handling checks during STM AIT. TVAC for the satellite: not yet done (separate from MGSE).</p>
 """,
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: supplier-follow-up and concept-to-build interface lessons.</p>
-""",
+        "lessons": "",
         "tools": ["Creo Parametric", "ICD definition", "Supplier follow-up"],
     },
     {
         "slug": "mhd-reaction-wheel",
         "title": "MHD magnetic-fluid reaction wheel",
-        "meta": "ITA M.Sc. thesis · in progress · 20252027",
+        "meta": "ITA M.Sc. thesis · in progress · 2025–2027",
         "tags": ["CAD", "Calculations", "Test", "Additive Manufacturing"],
         "image": "/assets/img/placeholders/cad-panel.png",
         "summary": "M.Sc. thesis at ITA: development of a magnetohydrodynamic (MHD) magnetic-fluid reaction wheel for CubeSat attitude control.",
         "context": """
-<p>Masters research at Instituto Tecnológico de Aeronáutica (ITA), programme EAM-1  Aeronautical Design, Structures, and Aerospace Systems. Advisor: Prof. Tiago de Paula. Expected completion July 2027.</p>
+<p>Master’s research at Instituto Tecnológico de Aeronáutica (ITA), programme EAM-1 — Aeronautical Design, Structures, and Aerospace Systems. Advisor: Prof. Tiago de Paula. Expected completion July 2027.</p>
 """,
         "requirements": """
 <ul>
   <li>Reaction-wheel function using a magnetic fluid under MHD actuation, sized for CubeSat attitude control.</li>
-  <li class="todo"><strong>TODO</strong> - Erlan: torque, momentum, mass, and power targets once frozen for public release.</li>
 </ul>
 """,
         "approach": """
-<p class="todo"><strong>TODO</strong> - Erlan: describe modelling approach (MHD equations, FEM/CFD, prototypes) with only cleared content.</p>
-<div class="math-block">
-<p>Representative MHD body force (placeholder form):</p>
-$$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
-<p><strong>TODO</strong>: Erlan to confirm the formulation used in the thesis public summary.</p>
-</div>
+<p>Thesis work in progress on modelling and prototype development for a magnetic-fluid reaction wheel. Public technical detail will be added as results are cleared for release.</p>
 """,
         "results": """
-<p class="todo"><strong>TODO</strong> - Erlan: status, prototypes, and any measured numbers cleared for the site. Do not invent performance figures.</p>
+<p>Research in progress (expected completion July 2027). Measured performance figures are not published here yet.</p>
 """,
-        "mfg_test": """
-<p class="todo"><strong>TODO</strong> - Erlan: prototype manufacturing (incl. AM if used) and lab test plan/status.</p>
-""",
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: research lessons so far.</p>
-""",
+        "mfg_test": "",
+        "lessons": "",
         "tools": ["Creo / CAD", "MATLAB", "Python", "Lab instrumentation"],
     },
     {
@@ -329,158 +261,47 @@ $$\\mathbf{f} = \\mathbf{J} \\times \\mathbf{B}$$
         "meta": "Personal / supporting hardware · AM",
         "tags": ["Additive Manufacturing", "CAD", "Test"],
         "image": "/assets/img/placeholders/print-am.png",
-        "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware. Content to be filled with cleared examples.",
+        "summary": "Additive manufacturing work for fixtures, prototypes, and supporting hardware.",
         "context": """
-<p class="todo"><strong>TODO</strong> - Erlan: introduce which print projects are public (fixtures, education, personal prototypes). No confidential flight hardware data.</p>
+<p>Supporting hardware and prototypes produced with additive manufacturing methods, alongside conventional machining skills.</p>
 """,
-        "requirements": """
-<p class="todo"><strong>TODO</strong> - Erlan: requirements per selected print (tolerance, material, load).</p>
-""",
+        "requirements": "",
         "approach": """
 <p>Practical CNC / CAM background (SENAI aerospace machining course, 120 h) complements FDM/AM prototyping for ground support and concept hardware.</p>
-<figure class="case-figure">
-  <img src="/assets/img/placeholders/print-am.png" alt="Placeholder 3D printed part" width="960" height="600">
-  <figcaption>PLACEHOLDER  printed part gallery item</figcaption>
-</figure>
 """,
-        "results": """
-<p class="todo"><strong>TODO</strong> - Erlan: outcomes with real numbers only (print time, mass, measured fit).</p>
-""",
-        "mfg_test": """
-<p class="todo"><strong>TODO</strong> - Erlan: process (FDM/SLA/etc.), post-processing, and fit checks.</p>
-""",
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: design-for-AM lessons.</p>
-""",
-        "tools": ["Onshape / SolidWorks / Creo", "FDM (TBD)", "CAM / CNC"],
-    },
-    {
-        "slug": "fox17-chimneys",
-        "title": "Fox17  ~128 t chimneys & flanges",
-        "meta": "Fox17 · industrial structures · export · 20152023",
-        "tags": ["CAD", "Calculations", "FEA"],
-        "image": "/assets/img/placeholders/structure.png",
-        "summary": "As co-founder & CTO of Fox17, designed ~128 t, 100 m+ steel chimneys and their flanges for export (cement-plant filters and separators).",
-        "context": """
-<p>Fox17 designed filters and separators for cement plants. Structural design responsibility included large steel chimneys and flange interfaces for export projects.</p>
-""",
-        "requirements": """
-<ul>
-  <li>Steel chimneys on the order of ~128 t and 100 m+ height, with exportable flange detailing.</li>
-  <li class="todo"><strong>TODO</strong> - Erlan: codes/standards and wind/seismic load basis if publishable.</li>
-</ul>
-""",
-        "approach": """
-<p>Mechanical design and detailing of chimney shells and flanges for fabrication and export. Supporting analyses as required by the project.</p>
-<figure class="case-figure">
-  <img src="/assets/img/placeholders/structure.png" alt="Placeholder chimney structure" width="960" height="600">
-  <figcaption>PLACEHOLDER  chimney / flange drawing or photo</figcaption>
-</figure>
-""",
-        "results": """
-<div class="results-grid" data-featured-list>
-  <div data-featured="true"><strong>~128 t</strong><span>Chimney class</span></div>
-  <div data-featured="true"><strong>100 m+</strong><span>Height class</span></div>
-</div>
-<p class="todo"><strong>TODO</strong> - Erlan: export destinations / project names only if cleared; no invented performance claims.</p>
-""",
-        "mfg_test": """
-<p class="todo"><strong>TODO</strong> - Erlan: fabrication partners and inspection approach (public).</p>
-""",
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: large-structure detailing lessons transferable to space MGSE / ground equipment.</p>
-""",
-        "tools": ["SolidWorks", "Structural calculations", "Fabrication drawings"],
+        "results": "",
+        "mfg_test": "",
+        "lessons": "",
+        "tools": ["Onshape / SolidWorks / Creo", "FDM", "CAM / CNC"],
     },
     {
         "slug": "unb-hybrid-rocket",
         "title": "UnB hybrid rocket static-fire test bench",
-        "meta": "Universidade de Brasília · research · 20122013",
+        "meta": "Universidade de Brasília · research · 2012–2013",
         "tags": ["CAD", "Test", "Calculations"],
         "image": "/assets/img/placeholders/test-ait.png",
         "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013).",
         "context": """
-<p>During the Mechanical Engineering bachelors at Universidade de Brasília, I worked as a volunteer researcher on hybrid rocket static-fire test benches (Mar 2012  Jun 2013). Related extracurriculars: Apuama Racing (Formula SAE) and N-Prize.</p>
+<p>During the Mechanical Engineering bachelor’s at Universidade de Brasília, I worked as a volunteer researcher on hybrid rocket static-fire test benches (Mar 2012 – Jun 2013). Related extracurriculars: Apuama Racing (Formula SAE) and N-Prize.</p>
 """,
         "requirements": """
 <ul>
   <li>Experimental bench enabling static-fire testing of hybrid rocket motors.</li>
-  <li class="todo"><strong>TODO</strong> - Erlan: thrust / instrumentation requirements from the 2013 project if still accurate.</li>
 </ul>
 """,
         "approach": """
 <p>Design of an experimental bench for hybrid propulsion tests (documented in the 2013 UnB Scientific Initiation Congress paper). Later CFD work on a pressure-swirl atomizer appeared at CILAMCE 2016 (ANSYS CFX).</p>
-<div class="math-block">
-<p>Illustrative thrust from measured load (placeholder):</p>
-$$T = F_{\\mathrm{load\\,cell}}$$
-<p><strong>TODO</strong>: Erlan to replace with the data-reduction approach actually used.</p>
-</div>
 """,
         "results": """
 <p>Published: Cassiano, E. (2013). <em>Projeto de uma Bancada Experimental para o Teste de Motores Foguetes com Propulsão Híbrida</em>. 19th UnB Scientific Initiation Congress.</p>
-<p class="todo"><strong>TODO</strong> - Erlan: photos of the bench and any cleared measured curves.</p>
 """,
-        "mfg_test": """
-<p class="todo"><strong>TODO</strong> - Erlan: fabrication of the bench and static-fire safety procedure summary.</p>
-""",
-        "lessons": """
-<p class="todo"><strong>TODO</strong> - Erlan: instrumentation and safety lessons still relevant to spacecraft test setups.</p>
-""",
+        "mfg_test": "",
+        "lessons": "",
         "tools": ["SolidWorks", "Test instrumentation", "ANSYS CFX (related CFD)"],
     },
 ]
 
-
-def tags_html(tags):
-    return "<ul class=\"tags\">" + "".join(f"<li>{t}</li>" for t in tags) + "</ul>"
-
-
-def tools_html(tools):
-    return "<ul class=\"tags\">" + "".join(f"<li>{t}</li>" for t in tools) + "</ul>"
-
-
-HEAD = """<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title} · Erlan Cassiano</title>
-<meta name="description" content="{description}">
-<link rel="canonical" href="https://erlancassiano.github.io/projects/{slug}/">
-<link rel="icon" href="/favicon.png" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/site.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-  onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});"></script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap nav">
-    <a class="brand" href="/">Erlan Cassiano <span>Mech · Space</span></a>
-    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">?</button>
-    <ul class="nav-links" id="nav-links" data-nav-links>
-      <li><a href="/#projects">Projects</a></li>
-      <li><a href="/#timeline">Timeline</a></li>
-      <li><a href="/#calculations">Calculations</a></li>
-      <li><a href="/#gallery">Gallery</a></li>
-      <li><a href="/#publications">Publications</a></li>
-      <li><a href="/#certifications">Skills</a></li>
-      <li><a href="/media/">In the Media</a></li>
-      <li><a href="/resume.html">Resume</a></li>
-      <li><a href="/#contact">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="Toggle theme">DK</button>
-    </div>
-  </div>
-</header>
-"""
-
+# fox17-chimneys is a hand-maintained redirect to the Bolivia / strakes case studies — do not regenerate it.
 
 
 MEDIA_SECTIONS = {
@@ -523,8 +344,125 @@ MEDIA_SECTIONS = {
 """,
 }
 
+SECTION_DEFS = [
+    ("context", "Context"),
+    ("requirements", "Requirements"),
+    ("approach", "Approach"),
+    ("results", "Results"),
+    ("mfg_test", "Manufacturing &amp; test", "manufacturing-test"),
+    ("lessons", "Lessons"),
+]
+
+
+def tags_html(tags):
+    return "<ul class=\"tags\">" + "".join(f"<li>{t}</li>" for t in tags) + "</ul>"
+
+
+def tools_html(tools):
+    return "<ul class=\"tags\">" + "".join(f"<li>{t}</li>" for t in tools) + "</ul>"
+
+
+def has_content(html: str) -> bool:
+    if not html or not html.strip():
+        return False
+    text = re.sub(r"<[^>]+>", " ", html)
+    return bool(re.sub(r"\s+", "", text))
+
+
+def esc_attr(s: str) -> str:
+    return (
+        s.replace("&", "&amp;")
+        .replace('"', "&quot;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def head_html(title: str, description: str, slug: str) -> str:
+    url = f"{SITE}/projects/{slug}/"
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title} · Erlan Cassiano</title>
+<meta name="description" content="{esc_attr(description)}">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{esc_attr(title)} · Erlan Cassiano">
+<meta property="og:description" content="{esc_attr(description)}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{OG_IMAGE}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc_attr(title)} · Erlan Cassiano">
+<meta name="twitter:description" content="{esc_attr(description)}">
+<meta name="twitter:image" content="{OG_IMAGE}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="{FONT_HREF}">
+<link rel="stylesheet" href="{FONT_HREF}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{FONT_HREF}"></noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/">Erlan Cassiano <span>Mech · Space</span></a>
+    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="nav-links" data-nav-links>
+{NAV_LINKS}
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="Toggle theme">DK</button>
+    </div>
+  </div>
+</header>
+"""
+
+
 def render(project: dict) -> str:
-    return f"""{HEAD.format(title=project['title'], description=project['summary'], slug=project['slug'])}
+    sections = []
+    toc = []
+    for item in SECTION_DEFS:
+        key, label = item[0], item[1]
+        sid = item[2] if len(item) > 2 else key
+        body = project.get(key, "")
+        if not has_content(body):
+            continue
+        sections.append(f"""      <section id="{sid}">
+        <h2>{label}</h2>
+        {body}
+      </section>""")
+        toc.append(f'        <li><a href="#{sid}">{label}</a></li>')
+
+    tools = project.get("tools") or []
+    if tools:
+        sections.append(f"""      <section id="tools">
+        <h2>Tools</h2>
+        {tools_html(tools)}
+      </section>""")
+        toc.append('        <li><a href="#tools">Tools</a></li>')
+
+    media = MEDIA_SECTIONS.get(project["slug"], "")
+    if media:
+        sections.append(media)
+        toc.append('        <li><a href="#in-the-media">In the media</a></li>')
+
+    sections.append("""      <section id="confidentiality">
+        <h2>Confidentiality</h2>
+        <p class="note">No confidential Visiona or Thales Alenia Space data, drawings, or datasets are published on this page. TVAC for SATVHR is not yet done and is not claimed here.</p>
+      </section>""")
+    toc.append('        <li><a href="#confidentiality">Confidentiality</a></li>')
+
+    return f"""{head_html(project['title'], project['summary'], project['slug'])}
 <main id="main">
   <header class="case-hero">
     <div class="wrap">
@@ -537,53 +475,13 @@ def render(project: dict) -> str:
   </header>
   <div class="wrap case-layout">
     <article class="case-body">
-      <section id="context">
-        <h2>Context</h2>
-        {project['context']}
-      </section>
-      <section id="requirements">
-        <h2>Requirements</h2>
-        {project['requirements']}
-      </section>
-      <section id="approach">
-        <h2>Approach</h2>
-        {project['approach']}
-      </section>
-      <section id="results">
-        <h2>Results</h2>
-        {project['results']}
-      </section>
-      <section id="manufacturing-test">
-        <h2>Manufacturing &amp; test</h2>
-        {project['mfg_test']}
-      </section>
-      <section id="lessons">
-        <h2>Lessons</h2>
-        {project['lessons']}
-      </section>
-      <section id="tools">
-        <h2>Tools</h2>
-        {tools_html(project['tools'])}
-      </section>
-{MEDIA_SECTIONS.get(project["slug"], "")}
-      <section id="confidentiality">
-        <h2>Confidentiality</h2>
-        <p class="note">No confidential Visiona or Thales Alenia Space data, drawings, or datasets are published on this page. Figures marked PLACEHOLDER must be replaced only with material cleared for public release. TVAC for SATVHR is not yet done and is not claimed here.</p>
-      </section>
-      <p style="margin-top:2rem"><a class="btn ghost" href="/#projects">? All projects</a></p>
+{chr(10).join(sections)}
+      <p style="margin-top:2rem"><a class="btn ghost" href="/#projects">← All projects</a></p>
     </article>
     <aside class="case-toc" aria-label="On this page">
       <p>On this page</p>
       <ol>
-        <li><a href="#context">Context</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#manufacturing-test">Manufacturing &amp; test</a></li>
-        <li><a href="#lessons">Lessons</a></li>
-        <li><a href="#tools">Tools</a></li>
-        {('<li><a href="#in-the-media">In the media</a></li>' if project["slug"] in MEDIA_SECTIONS else '')}
-        <li><a href="#confidentiality">Confidentiality</a></li>
+{chr(10).join(toc)}
       </ol>
     </aside>
   </div>
@@ -599,11 +497,9 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render(p), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
-    # Export project cards data for index generation check
-    cards = ROOT / "scripts" / "projects.json"
-    import json
-    cards.write_text(json.dumps([{k: p[k] for k in ("slug","title","meta","tags","image","summary")} for p in PROJECTS], indent=2), encoding="utf-8")
-    print("wrote", cards.relative_to(ROOT))
+    # projects.json is the site-wide card catalog (includes hand-written Fox17/AEB
+    # pages). Do not overwrite it from the generator subset.
+    print("skipped projects.json (hand-maintained catalog)")
 
 
 if __name__ == "__main__":
