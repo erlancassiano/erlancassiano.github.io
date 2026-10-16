@@ -74,9 +74,9 @@ PROJECTS = [
 <div class="results-grid" data-featured-list>
   <div data-featured="true"><strong>&lt; 300 kg</strong><span>System mass class</span></div>
   <div data-featured="true"><strong>May 2026</strong><span>STM vib. qual. passed</span></div>
-  <div data-featured="true"><strong>&lt; 0.1 µm</strong><span>Jitter measurement precision</span></div>
+  <div data-featured="true"><strong>&lt; 1 µm</strong><span>Jitter measurement precision</span></div>
 </div>
-<p>STM vibration qualification (sine, random, and sine burst) passed at INPE/LIT in May 2026 and was correlated with the FEM. Jitter on the STM (main telescope mirror displacement under reaction-wheel imbalance) was measured with precision better than 0.1 µm.</p>
+<p>STM vibration qualification (sine, random, and sine burst) passed at INPE/LIT in May 2026 and was correlated with the FEM. Jitter on the STM (main telescope mirror displacement under reaction-wheel imbalance) was measured with precision better than 1 µm.</p>
 <figure class="case-figure">
   <img src="/assets/img/satvhr/satvhr-03-visiona.jpg" alt="Eight engineers in light-blue cleanroom smocks posing beside SatVHR solar-array and STM hardware in a high-bay integration facility" width="1024" height="624" loading="lazy">
   <figcaption>
