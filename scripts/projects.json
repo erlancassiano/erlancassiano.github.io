@@ -180,5 +180,135 @@
     "image": "/assets/img/placeholders/test-ait.png",
     "summary": "Volunteer research on hybrid rocket static-fire test benches at UnB; related publication at the 19th UnB Scientific Initiation Congress (2013).",
     "featured": false
+  },
+  {
+    "slug": "pulse-jet-dust-filter",
+    "title": "Pulse-jet baghouse dust collection filter",
+    "meta": "Mechanical · industrial",
+    "tags": [
+      "CAD",
+      "Manufacturing"
+    ],
+    "image": "/assets/img/placeholders/structure.png",
+    "summary": "Pulse-jet / baghouse dust collection filter.",
+    "featured": false
+  },
+  {
+    "slug": "educational-rocket-model",
+    "title": "Educational rocket model",
+    "meta": "Aerospace · rocketry",
+    "tags": [
+      "CAD",
+      "Test"
+    ],
+    "image": "/assets/img/placeholders/test-ait.png",
+    "summary": "Educational rocket model.",
+    "featured": false
+  },
+  {
+    "slug": "co2-nose-cone-ejector",
+    "title": "CO2 nose-cone ejector",
+    "meta": "Aerospace · rocketry",
+    "tags": [
+      "CAD",
+      "Test"
+    ],
+    "image": "/assets/img/placeholders/test-ait.png",
+    "summary": "CO2 nose-cone ejector for a rocket.",
+    "featured": false
+  },
+  {
+    "slug": "side-ejecting-parachute",
+    "title": "Side-ejecting parachute system for a rocket",
+    "meta": "Aerospace · rocketry",
+    "tags": [
+      "CAD",
+      "Test"
+    ],
+    "image": "/assets/img/placeholders/test-ait.png",
+    "summary": "Side-ejecting parachute system for a rocket.",
+    "featured": false
+  },
+  {
+    "slug": "cloud-seeding-rocket",
+    "title": "Cloud-seeding rocket",
+    "meta": "Aerospace · rocketry",
+    "tags": [
+      "CAD",
+      "Test"
+    ],
+    "image": "/assets/img/placeholders/test-ait.png",
+    "summary": "Cloud-seeding rocket.",
+    "featured": false
+  },
+  {
+    "slug": "omega-power-flywheel",
+    "title": "Omega Power flywheel energy storage",
+    "meta": "Mechanical · energy",
+    "tags": [
+      "CAD",
+      "Energy"
+    ],
+    "image": "/assets/img/placeholders/fea-mode.png",
+    "summary": "Omega Power flywheel for energy storage.",
+    "featured": false
+  },
+  {
+    "slug": "truck-antenna-mount",
+    "title": "Truck antenna mount",
+    "meta": "Mechanical · industrial",
+    "tags": [
+      "CAD",
+      "Manufacturing"
+    ],
+    "image": "/assets/img/placeholders/structure.png",
+    "summary": "Antenna mount for trucks.",
+    "featured": false
+  },
+  {
+    "slug": "compact-antennas",
+    "title": "Structural and thermal design of compact antennas",
+    "meta": "Mechanical · antennas",
+    "tags": [
+      "CAD",
+      "Thermal",
+      "FEA"
+    ],
+    "image": "/assets/img/placeholders/fea-mode.png",
+    "summary": "Structural and thermal design of compact antennas.",
+    "featured": false
+  },
+  {
+    "slug": "rua-dois-system",
+    "title": "Rua Dois system and app",
+    "meta": "Software · Rua Dois",
+    "tags": [
+      "Software"
+    ],
+    "image": "/assets/img/placeholders/cad-panel.png",
+    "summary": "Rua Dois system and app.",
+    "featured": false
+  },
+  {
+    "slug": "civ-system",
+    "title": "CIV system",
+    "meta": "Software · CIV",
+    "tags": [
+      "Software"
+    ],
+    "image": "/assets/img/placeholders/cad-panel.png",
+    "summary": "CIV system.",
+    "featured": false
+  },
+  {
+    "slug": "comida-verificada",
+    "title": "Comida Verificada (CoV) food-verification platform",
+    "meta": "Software · non-profit",
+    "tags": [
+      "Software"
+    ],
+    "image": "/assets/img/placeholders/cad-panel.png",
+    "summary": "Comida Verificada (CoV), a non-profit food-verification platform.",
+    "featured": false
   }
 ]
