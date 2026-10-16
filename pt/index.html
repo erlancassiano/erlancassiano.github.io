@@ -4,21 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Erlan Cassiano – Engenheiro de Projeto Mecânico de Satélites</title>
-<meta name="description" content="Versão em português do portfólio de Erlan Cassiano. Os estudos de caso completos estão em inglês.">
-<meta property="og:type" content="website">
+<meta name="description" content="Portfólio de Erlan Cassiano, Engenheiro de Projeto Mecânico de Satélites e Arquiteto Mecânico em São José dos Campos, Brasil. Estruturas de satélite, CAD, FEA, térmico, AIT e qualificação por vibração.">
+<meta property="og:type" content="profile">
 <meta property="og:title" content="Erlan Cassiano – Engenheiro de Projeto Mecânico de Satélites">
-<meta property="og:description" content="Versão em português do portfólio de Erlan Cassiano. Os estudos de caso completos estão em inglês.">
+<meta property="og:description" content="Portfólio de Erlan Cassiano, Engenheiro de Projeto Mecânico de Satélites e Arquiteto Mecânico em São José dos Campos, Brasil. Estruturas de satélite, CAD, FEA, térmico, AIT e qualificação por vibração.">
 <meta property="og:url" content="https://erlancassiano.github.io/pt/">
 <meta property="og:image" content="https://erlancassiano.github.io/assets/img/og-share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Erlan Cassiano – Engenheiro de Projeto Mecânico de Satélites">
-<meta name="twitter:description" content="Versão em português do portfólio de Erlan Cassiano. Os estudos de caso completos estão em inglês.">
+<meta name="twitter:description" content="Portfólio de Erlan Cassiano, Engenheiro de Projeto Mecânico de Satélites e Arquiteto Mecânico em São José dos Campos, Brasil. Estruturas de satélite, CAD, FEA, térmico, AIT e qualificação por vibração.">
 <meta name="twitter:image" content="https://erlancassiano.github.io/assets/img/og-share.jpg">
 <link rel="canonical" href="https://erlancassiano.github.io/pt/">
 <link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/">
 <link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/">
+<link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,27 +33,645 @@
 <header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="/pt/">Erlan Cassiano <span>Mec · Espaço</span></a>
+    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">☰</button>
+    <ul class="nav-links" id="nav-links" data-nav-links>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#timeline">Linha do tempo</a></li>
+      <li><a href="#publications">Publicações</a></li>
+      <li><a href="#certifications">Competências</a></li>
+      <li><a href="/pt/media/">Na mídia</a></li>
+      <li><a href="/pt/resume.html">Currículo</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
     <div class="nav-actions">
-      <a class="btn ghost" href="/" hreflang="en" lang="en" style="padding:0.45rem 0.7rem">EN</a>
+      <nav class="lang-switch" aria-label="Idioma"><a href="/" hreflang="en" lang="en">EN</a><span aria-hidden="true">|</span><a href="/pt/" hreflang="pt-BR" lang="pt-BR" aria-current="page">PT</a></nav>
       <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="Alternar tema">DK</button>
     </div>
   </div>
 </header>
-<main id="main" class="wrap" style="padding:4rem 0 5rem;max-width:40rem">
-  <p class="kicker">Versão em português</p>
-  <h1>Engenheiro de Projeto Mecânico de Satélites</h1>
-  <p class="lede">Esta página é um resumo em português. Os estudos de caso completos (projetos, linha do tempo, mídia e currículo embutido) permanecem em inglês no site principal.</p>
-  <div class="btn-row">
-    <a class="btn primary" href="/" hreflang="en" lang="en">Ver portfólio completo (EN)</a>
-    <a class="btn" href="/resume.html">Currículo (PDF)</a>
-    <a class="btn ghost" href="/cv/Erlan-Cassiano_CV_Mechanical-Design-PT-BR_22ec.pdf" download>Baixar PDF PT-BR</a>
-  </div>
-  <p style="margin-top:2rem;color:var(--fg-muted)">Idioma: <a href="/pt/" hreflang="pt-BR" aria-current="page">Português</a> · <a href="/" hreflang="en" lang="en">English</a></p>
+
+<main id="main">
+  <section class="hero" aria-label="Introdução">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">São José dos Campos, Brasil</p>
+        <p class="hero-brand">Erlan Cassiano</p>
+        <h1>Engenheiro de Projeto Mecânico de Satélites</h1>
+        <p class="lede">Arquitetura mecânica para satélites LEO e GEO — configuração, estruturas sanduíche, conceitos de MGSE e qualificação por vibração, dos requisitos ao AIT.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="/pt/resume.html">Ver CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/erlancassiano" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="#projects">Trabalhos selecionados</a>
+        </div>
+      </div>
+      <ul class="stats" id="stats-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos" aria-label="Números em destaque">
+        <li data-featured="true"><strong>&lt; 300 kg</strong><span>Classe de massa LEO do SATVHR</span></li>
+        <li data-featured="true"><strong>maio de 2026</strong><span>Qualif. por vibração do STM · INPE/LIT</span></li>
+        <li data-featured="true"><strong>&lt; 1 µm</strong><span>Precisão de medição de jitter do STM</span></li>
+        <li data-featured="true"><strong>~R$ 36M</strong><span>Valor de extensão de vida do SGDC demonstrado</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Trabalhos selecionados</p>
+        <h2>Projetos</h2>
+        <p class="lede">Estudos de caso em CAD, FEA, suporte térmico, ensaio, manufatura aditiva e cálculos.</p>
+      </div>
+      <div class="project-grid" id="project-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <a class="project-card" href="/pt/projects/satvhr-stm/" data-featured="true">
+          <div class="media"><img src="/assets/img/satvhr/satvhr-card.jpg" alt="Modelo Estrutural Térmico do SatVHR com MLI cobre e baffle óptico" width="800" height="488" loading="eager"></div>
+          <div class="body">
+            <p class="meta">Visiona · observação da Terra em LEO · Fase B/C · 2023–presente</p>
+            <h3>Arquitetura mecânica do SATVHR e qualificação por vibração do STM</h3>
+            <p>Arquitetura mecânica e térmica de um satélite de observação da Terra em LEO com massa abaixo de 300 kg, incluindo a qualificação por vibração do STM no INPE/LIT (maio de 2026).</p>
+            <ul class="tags"><li>CAD</li><li>FEA</li><li>Térmico</li><li>Teste</li><li>Cálculos</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/sgdc-propulsion/" data-featured="true">
+          <div class="media"><img src="/assets/img/sgdc/sgdc-card.jpg" alt="Satélite SGDC totalmente montado em sala limpa" width="800" height="534" loading="eager"></div>
+          <div class="body">
+            <p class="meta">Thales Alenia Space · Cannes · programa AEB · 2014–2016</p>
+            <h3>Transferência de tecnologia de propulsão do SGDC</h3>
+            <p>Treinamento on-the-job no subsistema de propulsão bipropelente do SGDC do Brasil; demonstrou que mais de 16 kg de propelente adicional poderiam ser carregados, conferindo ~2.5 meses de vida e ~R$ 36M.</p>
+            <ul class="tags"><li>Cálculos</li><li>Teste</li><li>CAD</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/vcub1-assembly/" data-featured="true">
+          <div class="media"><img src="/assets/img/vcub1/vcub1-card.jpg" alt="CubeSat VCUB1 com painéis solares desdobrados" width="800" height="533" loading="eager"></div>
+          <div class="body">
+            <p class="meta">Visiona · CubeSat de 12 kg · Falcon 9 Transporter-7 · 2023</p>
+            <h3>Montagem final de voo do VCUB1</h3>
+            <p>Montagem final de voo do CubeSat VCUB1 de 12 kg, incluindo vibração delta e verificações de desdobramento dos painéis solares antes do lançamento no Falcon 9.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li><li>Manufatura aditiva</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/aeb-parachute-cansat-bench/" data-featured="true">
+          <div class="media"><img src="/assets/img/aeb-cansat-bench/card.jpg" alt="Disparo da bancada de ensaio de foguete durante teste de ejeção" width="480" height="270" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">AEB · bancada de ensaio de foguete</p>
+            <h3>Bancada de ensaio de ejeção de paraquedas e CanSat (AEB)</h3>
+            <p>Bancada de ensaio de foguete para ejeção de paraquedas e ejeção de CanSat — projeto para a AEB (Agência Espacial Brasileira).</p>
+            <ul class="tags"><li>Ensaios</li><li>CAD</li><li>CanSat</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/educational-rocket-model/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Aeroespacial · foguetaria</p>
+            <h3>Modelo educacional de foguete</h3>
+            <p>Modelo educacional de foguete.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/co2-nose-cone-ejector/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Aeroespacial · foguetaria</p>
+            <h3>Ejetor de ogiva a CO2</h3>
+            <p>Ejetor de ogiva a CO2 para um foguete.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/side-ejecting-parachute/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Aeroespacial · foguetaria</p>
+            <h3>Sistema de paraquedas de ejeção lateral para foguete</h3>
+            <p>Sistema de paraquedas de ejeção lateral para um foguete.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/cloud-seeding-rocket/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Aeroespacial · foguetaria</p>
+            <h3>Foguete de semeadura de nuvens</h3>
+            <p>Foguete de semeadura de nuvens.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/mgse-lifting/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/structure.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Visiona · AIT do STM do SATVHR · liderança de conceito</p>
+            <h3>MGSE de içamento e manuseio — conceito</h3>
+            <p>Liderei o conceito do MGSE de içamento e manuseio; projeto detalhado e fabricação por fornecedor subcontratado; ensaiado durante a campanha de AIT do STM.</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li><li>Cálculos</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/mhd-reaction-wheel/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/cad-panel.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Dissertação de M.Sc. no ITA · em andamento · 2025–2027</p>
+            <h3>Roda de reação de fluido magnético MHD</h3>
+            <p>Dissertação de M.Sc. no ITA: desenvolvimento de uma roda de reação de fluido magnético magnetohidrodinâmica (MHD) para controle de atitude de CubeSat.</p>
+            <ul class="tags"><li>CAD</li><li>Cálculos</li><li>Teste</li><li>Manufatura aditiva</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/additive-manufacturing/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/print-am.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Pessoal / hardware de apoio · AM</p>
+            <h3>Projetos de impressão 3D</h3>
+            <p>Trabalho de manufatura aditiva para dispositivos, protótipos e hardware de apoio.</p>
+            <ul class="tags"><li>Manufatura aditiva</li><li>CAD</li><li>Teste</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-chimney-bolivia/" data-featured="true">
+          <div class="media"><img src="/assets/img/fox17/chimney-itacamba-01.jpg" alt="Modelo 3D de flange estrutural aparafusado para chaminé de aço de 102,7 m" width="800" height="510" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Fox17 · exportação para fábrica de cimento · 2016</p>
+            <h3>Chaminé de aço para exportação, 102,7 m (fábrica de cimento, Bolívia)</h3>
+            <p>Autor e projetista de uma chaminé de aço de 102,7 m para exportação e de seus flanges aparafusados para um projeto de fábrica de cimento na Bolívia — ~128 t, base Ø3,83 m, dez flanges, ASME STS-1-2011.</p>
+            <ul class="tags"><li>CAD</li><li>Cálculos</li><li>FEA</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-chimney-strakes/" data-featured="true">
+          <div class="media"><img src="/assets/img/fox17/chimney-cimesa-03.jpg" alt="Elevação de chaminé de aço de ~95,5 m com strakes helicoidais" width="800" height="570" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Fox17 · fábrica de cimento · 2015</p>
+            <h3>Chaminé de aço, ~95 m com strakes helicoidais (fábrica de cimento)</h3>
+            <p>Chaminé de aço de ~95,5 m para fábrica de cimento com strakes helicoidais — três flanges estruturais aparafusados, baseplate em Ø5,04 m — verificada quanto a desprendimento de vórtices, vento, sismo e fadiga no MECASTACK. Relatório de dados técnicos e QC/aprovação.</p>
+            <ul class="tags"><li>CAD</li><li>Cálculos</li><li>FEA</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-plant-ventilation/" data-featured="false">
+          <div class="media"><picture><source type="image/webp" srcset="/assets/img/fox17/intercement-caf-07.webp"><img src="/assets/img/fox17/intercement-caf-07.jpg" alt="Modelo 3D da ventilação da casa de compressores" width="800" height="550" loading="lazy"></picture></div>
+          <div class="body">
+            <p class="meta">Fox17 · fábrica de cimento · 2016–17</p>
+            <h3>Ventilação da casa de compressores e tubulação de planta (fábrica de cimento)</h3>
+            <p>Engenharia mecânica de fábrica de cimento: ventilação da casa de compressores com CFD, tubulação de ar comprimido e água industrial, e estudo de reaproveitamento de paletizadora (2016–17).</p>
+            <ul class="tags"><li>CAD</li><li>CFD</li><li>Tubulação</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-blast-cabin/" data-featured="false">
+          <div class="media"><img src="/assets/img/fox17/blast-cabin-01.jpg" alt="Fabricação de cabine de jateamento em contêiner de 40 pés" width="800" height="600" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Fox17 · fabricação · 2015</p>
+            <h3>Cabine de jateamento em contêiner de 40 pés</h3>
+            <p>Cabine de jateamento integrada a um contêiner marítimo de 40 pés — fotos de fabricação da montagem de 2015.</p>
+            <ul class="tags"><li>CAD</li><li>Fabricação</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-pulleys/" data-featured="false">
+          <div class="media"><img src="/assets/img/fox17/pulley-largo-01.jpg" alt="Polias de aço usinadas sobre palete" width="800" height="600" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Fox17 · mineração · 2017</p>
+            <h3>Polias e eixo usinados (mineração)</h3>
+            <p>Polias e eixo usinados para um cliente de mineração (2017) — hardware as-built após usinagem.</p>
+            <ul class="tags"><li>CAD</li><li>Fabricação</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/fox17-solar-pv/" data-featured="false">
+          <div class="media"><picture><source type="image/webp" srcset="/assets/img/fox17/solar-pv-003a.webp"><img src="/assets/img/fox17/solar-pv-003a.jpg" alt="Arranjo fotovoltaico conectado à rede instalado em telhado" width="800" height="600" loading="lazy"></picture></div>
+          <div class="body">
+            <p class="meta">Fox17 · SFCR · 2016–17</p>
+            <h3>Sistemas fotovoltaicos conectados à rede</h3>
+            <p>Sistemas fotovoltaicos conectados à rede (SFCR) — arranjos em telhado de projetos Fox17 em 2016–17.</p>
+            <ul class="tags"><li>CAD</li><li>Energia</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/pulse-jet-dust-filter/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/structure.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Mecânico · industrial</p>
+            <h3>Filtro de coleta de pó tipo baghouse com pulse-jet</h3>
+            <p>Filtro de coleta de pó tipo pulse-jet / baghouse.</p>
+            <ul class="tags"><li>CAD</li><li>Fabricação</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/omega-power-flywheel/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/fea-mode.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Mecânico · energia</p>
+            <h3>Armazenamento de energia por volante Omega Power</h3>
+            <p>Volante Omega Power para armazenamento de energia.</p>
+            <ul class="tags"><li>CAD</li><li>Energia</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/truck-antenna-mount/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/structure.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Mecânico · industrial</p>
+            <h3>Suporte de antena para caminhão</h3>
+            <p>Suporte de antena para caminhões.</p>
+            <ul class="tags"><li>CAD</li><li>Fabricação</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/compact-antennas/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/fea-mode.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Mecânico · antenas</p>
+            <h3>Projeto estrutural e térmico de antenas compactas</h3>
+            <p>Projeto estrutural e térmico de antenas compactas.</p>
+            <ul class="tags"><li>CAD</li><li>Térmico</li><li>FEA</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/unb-hybrid-rocket/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/test-ait.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Universidade de Brasília · pesquisa · 2012–2013</p>
+            <h3>Bancada de ensaio estático de foguete híbrido da UnB</h3>
+            <p>Pesquisa voluntária em bancadas de ensaio estático de foguetes híbridos na UnB; publicação relacionada no 19º Congresso de Iniciação Científica da UnB (2013).</p>
+            <ul class="tags"><li>CAD</li><li>Teste</li><li>Cálculos</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/rua-dois-system/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/cad-panel.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Software · Rua Dois</p>
+            <h3>Sistema e aplicativo Rua Dois</h3>
+            <p>Sistema e aplicativo Rua Dois.</p>
+            <ul class="tags"><li>Software</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/civ-system/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/cad-panel.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Software · CIV</p>
+            <h3>Sistema CIV</h3>
+            <p>Sistema CIV.</p>
+            <ul class="tags"><li>Software</li></ul>
+          </div>
+        </a>
+        <a class="project-card" href="/pt/projects/comida-verificada/" data-featured="false">
+          <div class="media"><img src="/assets/img/placeholders/cad-panel.png" alt="" width="640" height="400" loading="lazy"></div>
+          <div class="body">
+            <p class="meta">Software · organização sem fins lucrativos</p>
+            <h3>Plataforma de verificação de alimentos Comida Verificada (CoV)</h3>
+            <p>Comida Verificada (CoV), plataforma sem fins lucrativos de verificação de alimentos.</p>
+            <ul class="tags"><li>Software</li></ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Carreira</p>
+        <h2>Linha do tempo</h2>
+        <p class="lede">Experiência profissional primeiro, depois formação e cursos — da transferência de propulsão do SGDC à arquitetura mecânica do SATVHR.</p>
+        <p class="timeline-jump">
+          <a href="#work">Experiência profissional</a>
+          <a href="#education">Formação e cursos</a>
+        </p>
+      </div>
+
+      <div class="timeline-block" id="work">
+        <h3 class="timeline-block-title">Experiência profissional</h3>
+        <ol class="timeline" id="work-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+          <li data-featured="true">
+            <p class="when">2023 – presente</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Arquiteto Mecânico — Projeto Mecânico de Satélites</h3>
+              <p class="org">Visiona Tecnologia Espacial · São José dos Campos</p>
+              <ul>
+                <li>Arquitetura mecânica e térmica do SATVHR, satélite LEO com massa abaixo de 300 kg e vida útil de 5 anos (fase B/C): layouts em Creo, acomodação de payload, orçamento de massa, ICDs.</li>
+                <li>GD&amp;T e empilhamento de tolerâncias ISO GPS em desenhos mecânicos; painéis sanduíche (favo de mel de Al; faces em CFRP no voo, faces de Al no STM).</li>
+                <li>Liderou o conceito do MGSE de içamento/manuseio (detalhamento e fabricação por subcontratado); coautoria da especificação do controlador térmico da plataforma até a aceitação.</li>
+                <li>Dirige e revisa análises estruturais/térmicas (Femap/Nastran, Thermal Desktop/SINDA); elabora relatórios de margem; apresenta mecânica/térmica no PRR e PDR rumo aos CDRs (fim de 2026).</li>
+                <li>Coautoria do plano/especificação de ensaio do STM; liderou a qualificação por vibração do STM no INPE/LIT (aprovado em maio de 2026), correlacionada com o FEM; mediu o jitter do STM com precisão melhor que 1 µm.</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="true">
+            <p class="when">jan – mar 2023</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Engenheiro de Sistemas Espaciais — CubeSat VCUB1</h3>
+              <p class="org">Visiona Tecnologia Espacial</p>
+              <ul>
+                <li>Montagem final de voo do CubeSat VCUB1 de 12 kg; ensaios de vibração delta e desdobramento dos painéis solares; verificação de encaixe nos trilhos do deployer e ferramental de integração no Falcon 9 (Transporter-7).</li>
+                <li>Coautor do artigo IAC 2024 sobre a campanha de ensaio térmico-vácuo do VCUB1.</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">out 2018 – jul 2024</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Coordenador de Projetos, Head de Produto, COO, Consultor Técnico</h3>
+              <p class="org">RuaDois · São Paulo</p>
+            </div>
+          </li>
+          <li data-featured="true">
+            <p class="when">jul 2015 – jun 2023</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Cofundador e CTO</h3>
+              <p class="org">Fox17 · Brasília</p>
+              <ul>
+                <li>Projetou chaminés de aço de ~128 t e mais de 100 m e seus flanges para exportação (incluindo uma chaminé de 102,7 m ASME STS-1-2011).</li>
+                <li>Clientes incluíram Intercement, Votorantim e Tecnomont — projeto mecânico de fábricas de cimento, chaminés, ventilação/tubulação e fabricação relacionada.</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">fev – nov 2020</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Analista Júnior de Projetos Espaciais</h3>
+              <p class="org">Funcate · Brasília</p>
+              <ul>
+                <li>Documentação de lançamentos de foguetes modelo da AEB; autorizações do Centro de Lançamento de Alcântara.</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">nov 2016 – mai 2018</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Cofundador e COO, Scrum Master</h3>
+              <p class="org">CIV · Brasília</p>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">out 2016 – set 2017</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Bolsista SET-G — Engenharia de Satélites (SINDAE)</h3>
+              <p class="org">CNPq / AEB / INPE · Brasília</p>
+              <p>Bolsa de um ano apoiando dispositivos educacionais e modelagem de missões, motores e lançadores para planejamento de investimento.</p>
+            </div>
+          </li>
+          <li data-featured="true">
+            <p class="when">mar 2014 – out 2016</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Engenheiro de Propulsão de Satélites — transferência de tecnologia do SGDC</h3>
+              <p class="org">Thales Alenia Space · Cannes, França</p>
+              <ul>
+                <li>Selecionado pela AEB para ~5.500 h de treinamento on-the-job no subsistema de propulsão bipropelente do SGDC.</li>
+                <li>Demonstrou que mais de 16 kg de propelente adicional poderiam ser carregados (deformação do tanque sob pressurização), conferindo ~2.5 meses de vida e ~R$ 36M.</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">fev – abr 2014</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Projetista</h3>
+              <p class="org">Autotrac · Brasília</p>
+              <ul>
+                <li>Estruturas de bancadas de ensaio em SolidWorks; protótipos CNC.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="timeline-block" id="education">
+        <h3 class="timeline-block-title">Formação e cursos</h3>
+        <ol class="timeline" id="education-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+          <li data-featured="true">
+            <p class="when">jul 2025 – jul 2027</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>M.Sc. em andamento — Projeto Aeronáutico, Estruturas e Sistemas Aeroespaciais (EAM-1)</h3>
+              <p class="org">Instituto Tecnológico de Aeronáutica (ITA) · São José dos Campos</p>
+              <p>Dissertação: desenvolvimento de uma roda de reação de fluido magnético magnetohidrodinâmica (MHD) para controle de atitude de CubeSat. Orientador: Prof. Tiago de Paula. Previsão: jul 2027.</p>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">2023 – 2024</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Certificações e cursos</h3>
+              <p class="org">Desenvolvimento profissional</p>
+              <ul>
+                <li>Designing Space Missions and Systems — Teaching Science &amp; Technology Inc. (2024, 40 h)</li>
+                <li>Programação, setup e operação de centros de usinagem CNC para aeroespacial — SENAI (2024, 120 h); programação CAM — SENAI</li>
+                <li>Creo Parametric — Mult-e (2023, 20 h)</li>
+                <li>Space Mission Structures — Applied Technology Institute (2023, 40 h)</li>
+              </ul>
+            </div>
+          </li>
+          <li data-featured="false">
+            <p class="when">jun 2019 – nov 2021</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>MBA em Análise de Dados, BI e Big Data (450 h)</h3>
+              <p class="org">Universidade Cruzeiro do Sul · Online</p>
+            </div>
+          </li>
+          <li data-featured="true">
+            <p class="when">jun 2008 – jun 2013</p>
+            <span class="dot" aria-hidden="true"></span>
+            <div class="content">
+              <h3>Bacharelado em Engenharia Mecânica</h3>
+              <p class="org">Universidade de Brasília (UnB) · Brasília</p>
+              <ul>
+                <li>Voluntário de pesquisa em bancadas de ensaio estático de foguetes híbridos (mar 2012 – jun 2013).</li>
+                <li>Estagiário de metrologia e engenharia reversa (jan 2012 – mar 2013).</li>
+                <li>Extracurriculares: Apuama Racing (Formula SAE), N-Prize.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="publications">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Escrita</p>
+        <h2>Publicações</h2>
+      </div>
+      <ul class="pub-list" id="publications-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <li data-featured="true">
+          <strong>Silva, S. et al., incl. Cassiano, E. (2024).</strong>
+          <cite> Vcub1 Brazilian CubeSat Thermal Vacuum Tests Campaign. 75th International Astronautical Congress (IAC 2024), Milan, IAC-24-B4.IP.21.
+          <a href="https://doi.org/10.52202/078365-0126">doi:10.52202/078365-0126</a></cite>
+        </li>
+        <li data-featured="false">
+          <strong>Bertoldi, A. E. M.; Cassiano, E. R. S. et al. (2016).</strong>
+          <cite> A Study of the Atomization Process Using Numerical Simulation. CILAMCE 2016, RIPE (UnB) v.2 n.31. CFD (ANSYS CFX) of a pressure-swirl atomiser.</cite>
+        </li>
+        <li data-featured="false">
+          <strong>Cassiano, E. (2013).</strong>
+          <cite> Projeto de uma Bancada Experimental para o Teste de Motores Foguetes com Propulsão Híbrida. 19th UnB Scientific Initiation Congress (19º Congresso de Iniciação Científica da UnB).</cite>
+        </li>
+        <li data-featured="false">
+          <strong>Piratelli-Filho, A. et al., incl. Cassiano, E. R. S. (2013).</strong>
+          <cite> Planejamento do Processo de Medição com Scanner Laser Tridimensional. COBEF 2013.</cite>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Credenciais</p>
+        <h2>Certificações e cursos</h2>
+        <p class="lede">Cursos de espaço, CAD e manufatura do CV e do LinkedIn público — sem entradas inventadas.</p>
+        <p class="timeline-jump">
+          <a href="#certifications">Certificações</a>
+          <a href="#skills">Competências e ferramentas</a>
+          <a href="#languages">Idiomas</a>
+        </p>
+      </div>
+      <div class="cert-grid" id="certifications-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <article class="cert-card" data-featured="true">
+          <h3>Designing Space Missions and Systems</h3>
+          <p class="cert-meta"><span class="cert-issuer">Teaching Science &amp; Technology Inc. (TSTI)</span><span class="cert-year">2024</span></p>
+          <p class="cert-note">40 h</p>
+        </article>
+        <article class="cert-card" data-featured="true">
+          <h3>Programação, setup e operação de centros de usinagem CNC para aeroespacial</h3>
+          <p class="cert-meta"><span class="cert-issuer">SENAI</span><span class="cert-year">2024</span></p>
+          <p class="cert-note">120 h</p>
+        </article>
+        <article class="cert-card" data-featured="false">
+          <h3>Programação CAM para centros de usinagem e tornos CNC</h3>
+          <p class="cert-meta"><span class="cert-issuer">SENAI</span></p>
+        </article>
+        <article class="cert-card" data-featured="true">
+          <h3>Creo Parametric</h3>
+          <p class="cert-meta"><span class="cert-issuer">Mult-e Engenharia Digital</span><span class="cert-year">2023</span></p>
+          <p class="cert-note">20 h · emitido em nov 2023</p>
+        </article>
+        <article class="cert-card" data-featured="true">
+          <h3>Space Mission Structures</h3>
+          <p class="cert-meta"><span class="cert-issuer">Applied Technology Institute (ATI)</span><span class="cert-year">2023</span></p>
+          <p class="cert-note">40 h · emitido em set 2023</p>
+        </article>
+        <article class="cert-card" data-featured="false">
+          <h3>Data Science</h3>
+          <p class="cert-meta"><span class="cert-issuer">Awari</span><span class="cert-year">2021</span></p>
+          <p class="cert-note">Emitido em nov 2021</p>
+        </article>
+        <article class="cert-card" data-featured="false">
+          <h3>Service Hub Software</h3>
+          <p class="cert-meta"><span class="cert-issuer">HubSpot Academy</span><span class="cert-year">2021</span></p>
+          <p class="cert-note">Emitido em out 2021 · expirado em nov 2022</p>
+          <p class="cert-link"><a href="https://app.hubspot.com/academy/achievements/t3zxnmk3/en/1/erlan-cassiano/service-hub-software" target="_blank" rel="noopener noreferrer">Ver credencial</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Ferramentas</p>
+        <h2>Competências e ferramentas</h2>
+        <p class="lede">CAD, análise, prática de projeto, normas e AIT — agrupados para leitura rápida.</p>
+      </div>
+      <div class="skill-groups" id="skills-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <div class="skill-group" data-featured="true">
+          <h3>CAD</h3>
+          <ul class="tags">
+            <li>SolidWorks (~10 anos)</li>
+            <li>Creo (3)</li>
+            <li>Onshape (4)</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-featured="true">
+          <h3>MEF estrutural</h3>
+          <ul class="tags">
+            <li>Femap/Nastran</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-featured="true">
+          <h3>Térmico</h3>
+          <ul class="tags">
+            <li>Thermal Desktop/SINDA</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-featured="true">
+          <h3>Projeto</h3>
+          <ul class="tags">
+            <li>GD&amp;T e empilhamento de tolerâncias (ISO)</li>
+            <li>Projeto para manufatura</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-featured="true">
+          <h3>Normas</h3>
+          <ul class="tags">
+            <li>ECSS (adaptada)</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-featured="true">
+          <h3>Ensaios / AIT</h3>
+          <ul class="tags">
+            <li>Vibração senoidal</li>
+            <li>Vibração aleatória</li>
+            <li>Vibração sine-burst</li>
+            <li>Levantamento modal</li>
+            <li>Integração em sala limpa (ISO 8)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="languages">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Comunicação</p>
+        <h2>Idiomas</h2>
+      </div>
+      <ul class="lang-list" id="languages-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <li data-featured="true">
+          <span class="lang-name">Português</span>
+          <span class="lang-level">Nativo</span>
+        </li>
+        <li data-featured="true">
+          <span class="lang-name">Inglês</span>
+          <span class="lang-level">Fluente — Duolingo English Test 129, ago 2026</span>
+        </li>
+        <li data-featured="true">
+          <span class="lang-name">Francês</span>
+          <span class="lang-level">Intermediário</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Conexão</p>
+        <h2>Contato</h2>
+        <p class="lede">Aberto a conversas sobre projeto mecânico, estruturas e AIT em programas de satélites.</p>
+      </div>
+      <div class="contact-grid" id="contact-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+        <div class="contact-card" data-featured="true">
+          <h3>Direto</h3>
+          <ul class="plain-list" id="contact-details-list" data-featured-list data-more-label="Ver mais" data-less-label="Ver menos">
+            <li data-featured="true"><a href="mailto:erlan.neo@gmail.com">erlan.neo@gmail.com</a></li>
+            <li data-featured="true"><a href="https://www.linkedin.com/in/erlancassiano" rel="noopener noreferrer">linkedin.com/in/erlancassiano</a></li>
+            <li data-featured="true">São José dos Campos, SP, Brasil</li>
+            <li data-featured="true">+55 12 99793-3231</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn primary" href="/pt/resume.html">Abrir currículo</a>
+            <a class="btn" href="/cv/Erlan-Cassiano_CV_Mechanical-Design-PT-BR_22ec.pdf" download>Baixar PDF</a>
+          </div>
+        </div>
+        <div class="contact-card" data-featured="true">
+          <h3>Perfil</h3>
+          <p style="margin:0;color:var(--fg-muted);font-size:0.95rem">As <a href="#certifications">certificações</a>, <a href="#skills">competências e ferramentas</a> e <a href="#languages">idiomas</a> completos estão listados acima.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span data-year></span> Erlan Cassiano</p>
-    <p><a href="/" hreflang="en" lang="en">English site</a> · <a href="/pt/" hreflang="pt-BR" aria-current="page">PT-BR</a></p>
+    <p>© <span data-year></span> Erlan Cassiano · Projeto Mecânico de Satélites</p>
+    <p><a href="/pt/resume.html">Currículo</a> · <a href="/" hreflang="en" lang="en">EN</a> · <a href="https://www.linkedin.com/in/erlancassiano" rel="noopener noreferrer">LinkedIn</a></p>
   </div>
 </footer>
 <script src="/assets/js/site.js"></script>

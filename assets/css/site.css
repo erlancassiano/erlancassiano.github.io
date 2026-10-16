@@ -146,6 +146,25 @@ a:hover { color: var(--accent-2); }
   gap: 0.5rem;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--fg-muted);
+}
+.lang-switch a {
+  color: var(--fg-muted);
+  text-decoration: none;
+}
+.lang-switch a:hover,
+.lang-switch a[aria-current="page"] {
+  color: var(--fg);
+}
+
+
 .icon-btn {
   appearance: none;
   border: 1px solid var(--line);

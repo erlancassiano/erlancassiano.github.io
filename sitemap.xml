@@ -1,177 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://erlancassiano.github.io/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/pt/</loc>
-    <lastmod>2026-10-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/media/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/media/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/media/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/media/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/media/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/media/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/media/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/resume.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/resume.html"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/resume.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/resume.html"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/additive-manufacturing/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/additive-manufacturing/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/additive-manufacturing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/additive-manufacturing/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/additive-manufacturing/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/additive-manufacturing/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/additive-manufacturing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/additive-manufacturing/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/aeb-parachute-cansat-bench/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/aeb-parachute-cansat-bench/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/aeb-parachute-cansat-bench/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/aeb-parachute-cansat-bench/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/aeb-parachute-cansat-bench/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/aeb-parachute-cansat-bench/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/aeb-parachute-cansat-bench/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/aeb-parachute-cansat-bench/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/civ-system/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/civ-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/civ-system/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/civ-system/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/civ-system/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/civ-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/civ-system/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/civ-system/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/cloud-seeding-rocket/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/cloud-seeding-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/cloud-seeding-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/cloud-seeding-rocket/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/cloud-seeding-rocket/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/cloud-seeding-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/cloud-seeding-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/cloud-seeding-rocket/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/co2-nose-cone-ejector/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/co2-nose-cone-ejector/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/co2-nose-cone-ejector/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/co2-nose-cone-ejector/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/co2-nose-cone-ejector/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/co2-nose-cone-ejector/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/co2-nose-cone-ejector/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/co2-nose-cone-ejector/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/comida-verificada/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/comida-verificada/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/comida-verificada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/comida-verificada/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/comida-verificada/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/comida-verificada/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/comida-verificada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/comida-verificada/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/compact-antennas/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/compact-antennas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/compact-antennas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/compact-antennas/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/compact-antennas/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/compact-antennas/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/compact-antennas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/compact-antennas/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/educational-rocket-model/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/educational-rocket-model/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/educational-rocket-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/educational-rocket-model/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/educational-rocket-model/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/educational-rocket-model/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/educational-rocket-model/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/educational-rocket-model/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-blast-cabin/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-blast-cabin/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-blast-cabin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-blast-cabin/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-blast-cabin/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-blast-cabin/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-blast-cabin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-blast-cabin/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-chimney-bolivia/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimney-bolivia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimney-bolivia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimney-bolivia/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-chimney-bolivia/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimney-bolivia/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimney-bolivia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimney-bolivia/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-chimney-strakes/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimney-strakes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimney-strakes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimney-strakes/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-chimney-strakes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimney-strakes/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimney-strakes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimney-strakes/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/projects/fox17-chimneys/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimneys/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimneys/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimneys/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-chimneys/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-chimneys/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-chimneys/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-chimneys/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-plant-ventilation/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-plant-ventilation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-plant-ventilation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-plant-ventilation/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-plant-ventilation/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-plant-ventilation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-plant-ventilation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-plant-ventilation/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-pulleys/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-pulleys/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-pulleys/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-pulleys/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-pulleys/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-pulleys/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-pulleys/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-pulleys/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/fox17-solar-pv/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-solar-pv/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-solar-pv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-solar-pv/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/fox17-solar-pv/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/fox17-solar-pv/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/fox17-solar-pv/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/fox17-solar-pv/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/mgse-lifting/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/mgse-lifting/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/mgse-lifting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/mgse-lifting/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/mgse-lifting/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/mgse-lifting/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/mgse-lifting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/mgse-lifting/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/mhd-reaction-wheel/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/mhd-reaction-wheel/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/mhd-reaction-wheel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/mhd-reaction-wheel/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/mhd-reaction-wheel/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/mhd-reaction-wheel/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/mhd-reaction-wheel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/mhd-reaction-wheel/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/omega-power-flywheel/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/omega-power-flywheel/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/omega-power-flywheel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/omega-power-flywheel/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/omega-power-flywheel/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/omega-power-flywheel/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/omega-power-flywheel/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/omega-power-flywheel/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/pulse-jet-dust-filter/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/pulse-jet-dust-filter/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/pulse-jet-dust-filter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/pulse-jet-dust-filter/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/pulse-jet-dust-filter/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/pulse-jet-dust-filter/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/pulse-jet-dust-filter/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/pulse-jet-dust-filter/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/rua-dois-system/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/rua-dois-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/rua-dois-system/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/rua-dois-system/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/rua-dois-system/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/rua-dois-system/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/rua-dois-system/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/rua-dois-system/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/satvhr-stm/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/satvhr-stm/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/satvhr-stm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/satvhr-stm/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/satvhr-stm/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/satvhr-stm/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/satvhr-stm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/satvhr-stm/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/sgdc-propulsion/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/sgdc-propulsion/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/sgdc-propulsion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/sgdc-propulsion/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/sgdc-propulsion/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/sgdc-propulsion/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/sgdc-propulsion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/sgdc-propulsion/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/side-ejecting-parachute/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/side-ejecting-parachute/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/side-ejecting-parachute/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/side-ejecting-parachute/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/side-ejecting-parachute/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/side-ejecting-parachute/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/side-ejecting-parachute/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/side-ejecting-parachute/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/truck-antenna-mount/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/truck-antenna-mount/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/truck-antenna-mount/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/truck-antenna-mount/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/truck-antenna-mount/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/truck-antenna-mount/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/truck-antenna-mount/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/truck-antenna-mount/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/unb-hybrid-rocket/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/unb-hybrid-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/unb-hybrid-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/unb-hybrid-rocket/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/unb-hybrid-rocket/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/unb-hybrid-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/unb-hybrid-rocket/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/unb-hybrid-rocket/"/>
   </url>
   <url>
     <loc>https://erlancassiano.github.io/projects/vcub1-assembly/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/vcub1-assembly/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/vcub1-assembly/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/vcub1-assembly/"/>
+  </url>
+  <url>
+    <loc>https://erlancassiano.github.io/pt/projects/vcub1-assembly/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://erlancassiano.github.io/projects/vcub1-assembly/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://erlancassiano.github.io/pt/projects/vcub1-assembly/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://erlancassiano.github.io/projects/vcub1-assembly/"/>
   </url>
 </urlset>

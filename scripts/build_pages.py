@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate case-study HTML pages from project data. Run from repo root."""
+"""Generate EN + PT-BR case-study HTML pages from project data. Run from repo root."""
 from pathlib import Path
 import re
 
+from pt_generated_cases import PT_GENERATED, PT_MEDIA_SECTIONS
+from pt_hand_cases import EN_HAND_CASES, PT_HAND_CASES
+
 ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_DIR = ROOT / "projects"
+PT_PROJECTS_DIR = ROOT / "pt" / "projects"
 SITE = "https://erlancassiano.github.io"
 OG_IMAGE = f"{SITE}/assets/img/og-share.jpg"
 FONT_HREF = (
@@ -13,26 +17,113 @@ FONT_HREF = (
     "&family=IBM+Plex+Sans:wght@400;500&family=Syne:wght@700&display=swap"
 )
 
-NAV_LINKS = """\
-      <li><a href="/#projects">Projects</a></li>
-      <li><a href="/#timeline">Timeline</a></li>
-      <li><a href="/#publications">Publications</a></li>
-      <li><a href="/#certifications">Skills</a></li>
-      <li><a href="/media/">In the Media</a></li>
-      <li><a href="/resume.html">Resume</a></li>
-      <li><a href="/#contact">Contact</a></li>"""
+TEXT_KEYS = (
+    "title",
+    "meta",
+    "summary",
+    "context",
+    "requirements",
+    "approach",
+    "results",
+    "mfg_test",
+    "lessons",
+    "tools",
+    "confidentiality",
+)
 
-FOOTER = """
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© <span data-year></span> Erlan Cassiano · Spacecraft Mechanical Design</p>
-    <p><a href="/#projects">Projects</a> · <a href="/resume.html">Resume</a> · <a href="https://www.linkedin.com/in/erlancassiano">LinkedIn</a></p>
-  </div>
-</footer>
-<script src="/assets/js/site.js"></script>
-</body>
-</html>
-"""
+UI = {
+    "en": {
+        "html_lang": "en",
+        "brand_sub": "Mech · Space",
+        "home": "/",
+        "skip": "Skip to content",
+        "open_menu": "Open menu",
+        "toggle_theme": "Toggle theme",
+        "nav": [
+            ("/#projects", "Projects"),
+            ("/#timeline", "Timeline"),
+            ("/#publications", "Publications"),
+            ("/#certifications", "Skills"),
+            ("/media/", "In the Media"),
+            ("/resume.html", "Resume"),
+            ("/#contact", "Contact"),
+        ],
+        "footer_tag": "Spacecraft Mechanical Design",
+        "footer_projects": "Projects",
+        "footer_resume": "Resume",
+        "case_kicker": "Case study",
+        "on_this_page": "On this page",
+        "on_this_page_aria": "On this page",
+        "all_projects": "← All projects",
+        "all_projects_href": "/#projects",
+        "sections": {
+            "context": "Context",
+            "requirements": "Requirements",
+            "approach": "Approach",
+            "results": "Results",
+            "mfg_test": "Manufacturing &amp; test",
+            "lessons": "Lessons",
+            "tools": "Tools",
+            "media": "In the media",
+            "confidentiality": "Confidentiality",
+        },
+        "default_confidentiality": (
+            "No confidential Visiona or Thales Alenia Space data, drawings, or "
+            "datasets are published on this page. TVAC for SATVHR is not yet done "
+            "and is not claimed here."
+        ),
+    },
+    "pt": {
+        "html_lang": "pt-BR",
+        "brand_sub": "Mec · Espaço",
+        "home": "/pt/",
+        "skip": "Ir ao conteúdo",
+        "open_menu": "Abrir menu",
+        "toggle_theme": "Alternar tema",
+        "nav": [
+            ("/pt/#projects", "Projetos"),
+            ("/pt/#timeline", "Linha do tempo"),
+            ("/pt/#publications", "Publicações"),
+            ("/pt/#certifications", "Competências"),
+            ("/pt/media/", "Na mídia"),
+            ("/pt/resume.html", "Currículo"),
+            ("/pt/#contact", "Contato"),
+        ],
+        "footer_tag": "Projeto Mecânico de Satélites",
+        "footer_projects": "Projetos",
+        "footer_resume": "Currículo",
+        "case_kicker": "Estudo de caso",
+        "on_this_page": "Nesta página",
+        "on_this_page_aria": "Nesta página",
+        "all_projects": "← Todos os projetos",
+        "all_projects_href": "/pt/#projects",
+        "sections": {
+            "context": "Contexto",
+            "requirements": "Requisitos",
+            "approach": "Abordagem",
+            "results": "Resultados",
+            "mfg_test": "Fabricação e ensaio",
+            "lessons": "Lições",
+            "tools": "Ferramentas",
+            "media": "Na mídia",
+            "confidentiality": "Confidencialidade",
+        },
+        "default_confidentiality": (
+            "Nenhum dado, desenho ou conjunto de dados confidencial da Visiona ou "
+            "da Thales Alenia Space é publicado nesta página. O TVAC do SATVHR "
+            "ainda não foi realizado e não é reivindicado aqui."
+        ),
+    },
+}
+
+SECTION_DEFS = [
+    ("context", "context"),
+    ("requirements", "requirements"),
+    ("approach", "approach"),
+    ("results", "results"),
+    ("mfg_test", "mfg_test", "manufacturing-test"),
+    ("lessons", "lessons"),
+]
 
 PROJECTS = [
     {
@@ -488,10 +579,7 @@ PROJECTS = [
     },
 ]
 
-# fox17-chimneys is a hand-maintained redirect to the Bolivia / strakes case studies — do not regenerate it.
-
-
-MEDIA_SECTIONS = {
+MEDIA_SECTIONS_EN = {
     "sgdc-propulsion": """
       <section id="in-the-media">
         <h2>In the media</h2>
@@ -531,15 +619,6 @@ MEDIA_SECTIONS = {
 """,
 }
 
-SECTION_DEFS = [
-    ("context", "Context"),
-    ("requirements", "Requirements"),
-    ("approach", "Approach"),
-    ("results", "Results"),
-    ("mfg_test", "Manufacturing &amp; test", "manufacturing-test"),
-    ("lessons", "Lessons"),
-]
-
 
 def tags_html(tags):
     return "<ul class=\"tags\">" + "".join(f"<li>{t}</li>" for t in tags) + "</ul>"
@@ -565,16 +644,71 @@ def esc_attr(s: str) -> str:
     )
 
 
-def head_html(title: str, description: str, slug: str) -> str:
-    url = f"{SITE}/projects/{slug}/"
+def page_url(slug: str, lang: str) -> str:
+    if lang == "en":
+        return f"{SITE}/projects/{slug}/"
+    return f"{SITE}/pt/projects/{slug}/"
+
+
+def page_path(slug: str, lang: str) -> Path:
+    if lang == "en":
+        return PROJECTS_DIR / slug / "index.html"
+    return PT_PROJECTS_DIR / slug / "index.html"
+
+
+def lang_switcher(slug: str, lang: str) -> str:
+    en_href = f"/projects/{slug}/"
+    pt_href = f"/pt/projects/{slug}/"
+    if lang == "en":
+        return (
+            f'<nav class="lang-switch" aria-label="Language">'
+            f'<a href="{en_href}" hreflang="en" lang="en" aria-current="page">EN</a>'
+            f'<span aria-hidden="true">|</span>'
+            f'<a href="{pt_href}" hreflang="pt-BR" lang="pt-BR">PT</a>'
+            f"</nav>"
+        )
+    return (
+        f'<nav class="lang-switch" aria-label="Idioma">'
+        f'<a href="{en_href}" hreflang="en" lang="en">EN</a>'
+        f'<span aria-hidden="true">|</span>'
+        f'<a href="{pt_href}" hreflang="pt-BR" lang="pt-BR" aria-current="page">PT</a>'
+        f"</nav>"
+    )
+
+
+def nav_html(ui: dict) -> str:
+    return "\n".join(f'      <li><a href="{href}">{label}</a></li>' for href, label in ui["nav"])
+
+
+def footer_html(ui: dict) -> str:
+    return f"""
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span data-year></span> Erlan Cassiano · {ui["footer_tag"]}</p>
+    <p><a href="{ui["all_projects_href"]}">{ui["footer_projects"]}</a> · <a href="{ui["nav"][5][0]}">{ui["footer_resume"]}</a> · <a href="https://www.linkedin.com/in/erlancassiano">LinkedIn</a></p>
+  </div>
+</footer>
+<script src="/assets/js/site.js"></script>
+</body>
+</html>
+"""
+
+
+def head_html(title: str, description: str, slug: str, lang: str, ui: dict) -> str:
+    url = page_url(slug, lang)
+    en_url = page_url(slug, "en")
+    pt_url = page_url(slug, "pt")
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{ui["html_lang"]}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title} · Erlan Cassiano</title>
 <meta name="description" content="{esc_attr(description)}">
 <link rel="canonical" href="{url}">
+<link rel="alternate" hreflang="en" href="{en_url}">
+<link rel="alternate" hreflang="pt-BR" href="{pt_url}">
+<link rel="alternate" hreflang="x-default" href="{en_url}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{esc_attr(title)} · Erlan Cassiano">
 <meta property="og:description" content="{esc_attr(description)}">
@@ -599,31 +733,83 @@ def head_html(title: str, description: str, slug: str) -> str:
   onload="renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});"></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">{ui["skip"]}</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="/">Erlan Cassiano <span>Mech · Space</span></a>
-    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+    <a class="brand" href="{ui["home"]}">Erlan Cassiano <span>{ui["brand_sub"]}</span></a>
+    <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links" aria-label="{ui["open_menu"]}">☰</button>
     <ul class="nav-links" id="nav-links" data-nav-links>
-{NAV_LINKS}
+{nav_html(ui)}
     </ul>
     <div class="nav-actions">
-      <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="Toggle theme">DK</button>
+      {lang_switcher(slug, lang)}
+      <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" title="{ui["toggle_theme"]}">DK</button>
     </div>
   </div>
 </header>
 """
 
 
-def render(project: dict) -> str:
+def localize_project(base: dict, lang: str) -> dict:
+    """Merge EN base fields with PT overlay when lang=pt."""
+    out = {
+        "slug": base["slug"],
+        "tags": list(base.get("tags") or []),
+        "image": base.get("image", ""),
+    }
+    for key in TEXT_KEYS:
+        out[key] = base.get(key, "" if key != "tools" else [])
+    if lang == "pt":
+        overlay = PT_GENERATED.get(base["slug"]) or PT_HAND_CASES.get(base["slug"])
+        if not overlay:
+            raise KeyError(f"Missing PT overlay for {base['slug']}")
+        for key in TEXT_KEYS:
+            if key in overlay:
+                out[key] = overlay[key]
+        if "tags" in overlay:
+            out["tags"] = overlay["tags"]
+    return out
+
+
+def all_base_projects() -> list:
+    projects = list(PROJECTS)
+    existing = {p["slug"] for p in projects}
+    for slug, en in EN_HAND_CASES.items():
+        if slug in existing:
+            continue
+        projects.append(
+            {
+                "slug": slug,
+                "title": en["title"],
+                "meta": en["meta"],
+                "tags": en["tags"],
+                "image": en.get("image", ""),
+                "summary": en["summary"],
+                "context": en.get("context", ""),
+                "requirements": en.get("requirements", ""),
+                "approach": en.get("approach", ""),
+                "results": en.get("results", ""),
+                "mfg_test": en.get("mfg_test", ""),
+                "lessons": en.get("lessons", ""),
+                "tools": en.get("tools", []),
+                "confidentiality": en.get("confidentiality", ""),
+            }
+        )
+    return projects
+
+
+def render(project: dict, lang: str) -> str:
+    ui = UI[lang]
+    labels = ui["sections"]
     sections = []
     toc = []
     for item in SECTION_DEFS:
-        key, label = item[0], item[1]
+        key = item[0]
         sid = item[2] if len(item) > 2 else key
         body = project.get(key, "")
         if not has_content(body):
             continue
+        label = labels[key]
         sections.append(f"""      <section id="{sid}">
         <h2>{label}</h2>
         {body}
@@ -633,60 +819,119 @@ def render(project: dict) -> str:
     tools = project.get("tools") or []
     if tools:
         sections.append(f"""      <section id="tools">
-        <h2>Tools</h2>
+        <h2>{labels["tools"]}</h2>
         {tools_html(tools)}
       </section>""")
-        toc.append('        <li><a href="#tools">Tools</a></li>')
+        toc.append(f'        <li><a href="#tools">{labels["tools"]}</a></li>')
 
-    media = MEDIA_SECTIONS.get(project["slug"], "")
+    if lang == "en":
+        media = MEDIA_SECTIONS_EN.get(project["slug"], "")
+    else:
+        media = PT_MEDIA_SECTIONS.get(project["slug"], "")
+        # Fix media "more" links to PT media page
+        media = media.replace('href="/media/', 'href="/pt/media/')
     if media:
         sections.append(media)
-        toc.append('        <li><a href="#in-the-media">In the media</a></li>')
+        toc.append(f'        <li><a href="#in-the-media">{labels["media"]}</a></li>')
 
-    sections.append("""      <section id="confidentiality">
-        <h2>Confidentiality</h2>
-        <p class="note">No confidential Visiona or Thales Alenia Space data, drawings, or datasets are published on this page. TVAC for SATVHR is not yet done and is not claimed here.</p>
+    conf = project.get("confidentiality") or ui["default_confidentiality"]
+    sections.append(f"""      <section id="confidentiality">
+        <h2>{labels["confidentiality"]}</h2>
+        <p class="note">{conf}</p>
       </section>""")
-    toc.append('        <li><a href="#confidentiality">Confidentiality</a></li>')
+    toc.append(f'        <li><a href="#confidentiality">{labels["confidentiality"]}</a></li>')
 
-    return f"""{head_html(project['title'], project['summary'], project['slug'])}
+    return f"""{head_html(project["title"], project["summary"], project["slug"], lang, ui)}
 <main id="main">
   <header class="case-hero">
     <div class="wrap">
-      <p class="kicker">Case study</p>
-      <h1>{project['title']}</h1>
-      <p class="lede">{project['summary']}</p>
-      <p class="case-meta">{project['meta']}</p>
-      {tags_html(project['tags'])}
+      <p class="kicker">{ui["case_kicker"]}</p>
+      <h1>{project["title"]}</h1>
+      <p class="lede">{project["summary"]}</p>
+      <p class="case-meta">{project["meta"]}</p>
+      {tags_html(project["tags"])}
     </div>
   </header>
   <div class="wrap case-layout">
     <article class="case-body">
 {chr(10).join(sections)}
-      <p style="margin-top:2rem"><a class="btn ghost" href="/#projects">← All projects</a></p>
+      <p style="margin-top:2rem"><a class="btn ghost" href="{ui["all_projects_href"]}">{ui["all_projects"]}</a></p>
     </article>
-    <aside class="case-toc" aria-label="On this page">
-      <p>On this page</p>
+    <aside class="case-toc" aria-label="{ui["on_this_page_aria"]}">
+      <p>{ui["on_this_page"]}</p>
       <ol>
 {chr(10).join(toc)}
       </ol>
     </aside>
   </div>
 </main>
-{FOOTER}
+{footer_html(ui)}
 """
+
+
+def write_chimneys_redirect(lang: str) -> None:
+    if lang == "en":
+        out = PROJECTS_DIR / "fox17-chimneys" / "index.html"
+        bolivia = "/projects/fox17-chimney-bolivia/"
+        strakes = "/projects/fox17-chimney-strakes/"
+        title = "Redirecting…"
+        body = (
+            f'This case study has been split. Continue to '
+            f'<a href="{bolivia}">Export steel chimney, 102.7 m</a> or '
+            f'<a href="{strakes}">Steel chimney, ~95 m with helical strakes</a>.'
+        )
+        canonical = f"{SITE}/projects/fox17-chimney-bolivia/"
+        refresh = bolivia
+    else:
+        out = PT_PROJECTS_DIR / "fox17-chimneys" / "index.html"
+        bolivia = "/pt/projects/fox17-chimney-bolivia/"
+        strakes = "/pt/projects/fox17-chimney-strakes/"
+        title = "Redirecionando…"
+        body = (
+            f'Este estudo de caso foi dividido. Continue para '
+            f'<a href="{bolivia}">Chaminé de aço para exportação, 102,7 m</a> ou '
+            f'<a href="{strakes}">Chaminé de aço, ~95 m com strakes helicoidais</a>.'
+        )
+        canonical = f"{SITE}/pt/projects/fox17-chimney-bolivia/"
+        refresh = bolivia
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        f"""<!doctype html>
+<html lang="{"en" if lang == "en" else "pt-BR"}">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url={refresh}">
+<link rel="canonical" href="{canonical}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>{title}</title>
+</head>
+<body>
+<p>{body}</p>
+</body>
+</html>
+""",
+        encoding="utf-8",
+    )
+    print("wrote", out.relative_to(ROOT))
 
 
 def main():
     PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
-    for p in PROJECTS:
-        out = PROJECTS_DIR / p["slug"] / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(render(p), encoding="utf-8")
-        print("wrote", out.relative_to(ROOT))
-    # projects.json is the site-wide card catalog (includes hand-written Fox17/AEB
-    # pages). Do not overwrite it from the generator subset.
-    print("skipped projects.json (hand-maintained catalog)")
+    PT_PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
+    bases = all_base_projects()
+    missing_pt = [p["slug"] for p in bases if p["slug"] not in PT_GENERATED and p["slug"] not in PT_HAND_CASES]
+    if missing_pt:
+        raise SystemExit(f"Missing PT overlays for: {missing_pt}")
+    for base in bases:
+        for lang in ("en", "pt"):
+            localized = localize_project(base, lang)
+            out = page_path(base["slug"], lang)
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(render(localized, lang), encoding="utf-8")
+            print("wrote", out.relative_to(ROOT))
+    for lang in ("en", "pt"):
+        write_chimneys_redirect(lang)
+    print("skipped projects.json (hand-maintained catalog with PT fields)")
 
 
 if __name__ == "__main__":

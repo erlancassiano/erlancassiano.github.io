@@ -7,12 +7,15 @@
 
   const themeBtn = document.querySelector("[data-theme-toggle]");
   if (themeBtn) {
+    const isPt = (root.getAttribute("lang") || "").toLowerCase().startsWith("pt");
+    const lightLabel = isPt ? "Mudar para tema claro" : "Switch to light theme";
+    const darkLabel = isPt ? "Mudar para tema escuro" : "Switch to dark theme";
     const sync = () => {
       const dark = root.getAttribute("data-theme") === "dark";
       themeBtn.setAttribute("aria-pressed", String(dark));
       themeBtn.textContent = dark ? "☀" : "☾";
-      themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
-      themeBtn.title = dark ? "Switch to light theme" : "Switch to dark theme";
+      themeBtn.setAttribute("aria-label", dark ? lightLabel : darkLabel);
+      themeBtn.title = dark ? lightLabel : darkLabel;
     };
     sync();
     themeBtn.addEventListener("click", () => {
