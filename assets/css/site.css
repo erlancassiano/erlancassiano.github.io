@@ -218,6 +218,21 @@ h3 { font-size: 1.25rem; font-weight: 700; }
   max-width: 40rem;
 }
 
+.about-prose {
+  display: grid;
+  gap: 1.15rem;
+  max-width: 42rem;
+}
+.about-prose p {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 1.05rem;
+}
+.about-prose a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
 .todo {
   border: 1px dashed var(--warn);
   background: color-mix(in srgb, var(--warn) 8%, var(--bg-elev));

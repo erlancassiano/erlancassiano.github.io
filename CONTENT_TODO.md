@@ -82,7 +82,7 @@ Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Ce
 - No manage / lead a team of N juniors wording
 - SATVHR: **below 300 kg** (never 500 kg)
 - SGDC: **more than 16 kg** propellant, **~2.5 months**, **~R$ 36M**
-- Jitter: **precision better than 0.1 µm**
+- Jitter: **precision better than 1 µm**
 - MGSE: **led the concept** (detailed & built by subcontractor)
 - SATVHR **TVAC not yet done**
 - **No confidential Visiona/Thales data**
