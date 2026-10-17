@@ -32,6 +32,10 @@ Projects also carry `"featured": true|false` in [`scripts/projects.json`](script
 
 Initial defaults and flip checklist: [CONTENT_TODO.md](CONTENT_TODO.md#featured-flags).
 
+## About portrait
+
+The About section loads `/assets/img/profile/erlan.jpg`. Replace `assets/img/profile/erlan.jpg` (square or 4:5, ?800px). Until a real photo is supplied, the repo ships a neutral “EC” initials placeholder at that path (CSS also falls back to initials if the file is missing).
+
 ## Content checklist
 
 See [CONTENT_TODO.md](CONTENT_TODO.md) for images, prose, and notebooks Erlan still needs to supply.

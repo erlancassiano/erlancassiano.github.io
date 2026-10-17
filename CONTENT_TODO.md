@@ -14,7 +14,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [x] Fox17 chimney / flange drawings or photos (cleared) â€” under `assets/img/fox17/`
 - [ ] UnB hybrid-rocket bench photos
 - [ ] AEB parachute/CanSat deployment bench: photos and CAD (cleared)
-- [ ] Optional portrait for About/Contact
+- [ ] Replace `assets/img/profile/erlan.jpg` (square or 4:5, ?800px) — About portrait (currently a neutral EC placeholder)
 
 ## Case-study prose
 
