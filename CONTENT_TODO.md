@@ -11,10 +11,10 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] MGSE as-built photos (no confidential markings)
 - [ ] MHD thesis figures / prototypes (when available)
 - [ ] 3D-print gallery set
-- [x] Fox17 chimney / flange drawings or photos (cleared) — under `assets/img/fox17/`
+- [x] Fox17 chimney / flange drawings or photos (cleared) â€” under `assets/img/fox17/`
 - [ ] UnB hybrid-rocket bench photos
 - [ ] AEB parachute/CanSat deployment bench: photos and CAD (cleared)
-- [ ] Replace `assets/img/profile/erlan.jpg` (square or 4:5, ?800px) � About portrait (currently a neutral EC placeholder)
+- [ ] Replace `assets/img/profile/erlan.jpg` (square or 4:5, ≥800px) — About portrait (currently a neutral EC placeholder)
 
 ## Case-study prose
 
@@ -25,7 +25,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 - [ ] Additive manufacturing: which projects are public + real measured fits
 - [ ] Fox17: codes/standards and export context if publishable
 - [ ] UnB bench: thrust/instrumentation details from 2013 if still accurate
-- [ ] AEB parachute & CanSat deployment test bench (`/projects/aeb-parachute-cansat-bench/`): year, role/responsibilities, photos/CAD — only confirmed facts
+- [ ] AEB parachute & CanSat deployment test bench (`/projects/aeb-parachute-cansat-bench/`): year, role/responsibilities, photos/CAD â€” only confirmed facts
 
 ## Calculations section (`/calculations/`)
 
@@ -37,7 +37,7 @@ The site ships with real facts from the existing CV/site text and clearly marked
 ## Resume / CV files
 
 - [ ] Confirm the embedded PT-BR Mechanical Design PDF (`cv/Erlan-Cassiano_CV_Mechanical-Design-PT-BR_22ec.pdf`) is the preferred public version
-- [ ] Optionally refresh EN-targeted PDFs already in `/cv/` so they match the new headline (Mechanical Design, not Space Systems; no manage 4 junior engineers; SATVHR below 300 kg)
+- [ ] Optionally refresh EN-targeted PDFs already in `/cv/` so they match the new headline (Mechanical Design, not Space Systems; no Â“manage 4 junior engineersÂ”; SATVHR below 300 kg)
 
 ## Copy polish
 
@@ -52,7 +52,7 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Section | Featured (`true`) | Collapsed (`false`) |
 |---|---|---|
 | Work timeline | Visiona (both roles), Fox17, Thales Alenia Space | RuaDois, Funcate, CIV, SET-G/CNPq/AEB/INPE, Autotrac |
-| Education timeline | ITA M.Sc., UnB bachelors | Certifications & courses summary, MBA |
+| Education timeline | ITA M.Sc., UnB bachelorÂ’s | Certifications & courses summary, MBA |
 | Certifications | TSTI, SENAI CNC, Creo (Mult-e), ATI | SENAI CAM, Awari Data Science, HubSpot |
 | Publications | IAC 2024 (VCUB1 TVAC) | Bertoldi 2016, UnB 2013, COBEF 2013, P&D Design 2012 |
 | Projects | SATVHR, SGDC, VCUB1, AEB parachute/CanSat bench, Fox17 chimneys (Bolivia 102.7 m & ~95 m strakes) | MGSE, MHD wheel, AM, Fox17 ventilation/blast/pulleys/solar, UnB hybrid |
@@ -63,14 +63,14 @@ Each CV-like item uses `data-featured="true|false"` (projects also have `"featur
 | Gallery | First two placeholders | Remaining placeholders |
 | Hero stats | All four headline numbers | _(none)_ |
 | Contact | Direct card, Profile card, and all Direct details | _(none)_ |
-| Resume Also available | Mechanical Design (EN), Currículo PT-BR | Mechanical Structures, Thermal & AIT, Space Systems |
+| Resume Â“Also availableÂ” | Mechanical Design (EN), CurrÃ­culo PT-BR | Mechanical Structures, Thermal & AIT, Space Systems |
 | Case-study results grids | All result cells (where present) | _(none)_ |
 
 ## Certifications / LinkedIn gaps
 
 Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Certifications & Courses were filled from CV PDFs in `/cv/` plus indexed public LinkedIn Licenses & Certifications / Courses content. Confirm or supply:
 
-- [ ] Year for **CAM programming (SENAI)**  listed on CV next to the 2024 CNC course and on LinkedIn Courses without a year
+- [ ] Year for **CAM programming (SENAI)** Â— listed on CV next to the 2024 CNC course and on LinkedIn Courses without a year
 - [ ] Credential / certificate links for TSTI, SENAI, Mult-e, ATI, and Awari (only HubSpot had a public credential URL)
 - [ ] Whether **Data Science (Awari)** and **Service Hub Software (HubSpot, expired)** should stay on the mechanical portfolio page
 - [ ] Any additional Licenses & Certifications on LinkedIn not captured in the index (CSM / leadership items intentionally omitted; no PMP or Green Belt found)
@@ -79,10 +79,10 @@ Public LinkedIn profile HTML was not reliably fetchable (direct page errors); Ce
 ## Hard rules already applied on the site
 
 - Headline focus: **Spacecraft Mechanical Design Engineer**
-- No manage / lead a team of N juniors wording
+- No Â“manage / lead a team of N juniorsÂ” wording
 - SATVHR: **below 300 kg** (never 500 kg)
 - SGDC: **more than 16 kg** propellant, **~2.5 months**, **~R$ 36M**
-- Jitter: **precision better than 1 µm**
+- Jitter: **precision better than 1 Âµm**
 - MGSE: **led the concept** (detailed & built by subcontractor)
 - SATVHR **TVAC not yet done**
 - **No confidential Visiona/Thales data**
